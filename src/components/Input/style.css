@@ -1,0 +1,51 @@
+/* App.css */
+
+/* Container for the .inputField field and label */
+.text-input-container {
+    position: relative;
+    width: 100%;
+    /* max-width: 300px; */
+    /* margin: 20px 0; */
+  }
+  
+  /* Input field styling */
+  .text-input-container .inputField {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    color: #333;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Change underline color on focus */
+  .text-input-container .inputField:focus {
+    border-bottom: 2px solid #3f51b5; /* Material-UI blue */
+  }
+  
+  /* Floating label styling */
+
+  
+  /* Move label to the top when .inputField is focused or has content */
+  .text-input-container .inputField:focus + label,
+  .text-input-container .inputField:not(:placeholder-shown) + label {
+    top: -20px;
+    font-size: 12px;
+    color: #3f51b5; /* Material-UI blue */
+  }
+  
+  /* Add hover effect for better UX */
+  .text-input-container .inputField:hover {
+    border-bottom: 2px solid #757575;
+  }
+  
+  /* Error message styling (optional) */
+  .text-input-container .error-message {
+    font-size: 12px;
+    color: red;
+    margin-top: 5px;
+  }
+  

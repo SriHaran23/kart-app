@@ -1,0 +1,268 @@
+{
+  "realme_models": [
+    {
+      "model": "Realme 1",
+      "variant": "32 GB",
+      "price": "₹8,990",
+      "original_price": "₹10,990",
+      "discount": "18%"
+    },
+    {
+      "model": "Realme 2",
+      "variant": "64 GB",
+      "price": "₹9,990",
+      "original_price": "₹11,990",
+      "discount": "17%"
+    },
+    {
+      "model": "Realme 2 Pro",
+      "variant": "64 GB, 4 GB RAM",
+      "price": "₹13,990",
+      "original_price": "₹15,990",
+      "discount": "13%"
+    },
+    {
+      "model": "Realme U1",
+      "variant": "64 GB",
+      "price": "₹11,999",
+      "original_price": "₹13,999",
+      "discount": "14%"
+    },
+    {
+      "model": "Realme 3",
+      "variant": "64 GB",
+      "price": "₹9,999",
+      "original_price": "₹12,999",
+      "discount": "23%"
+    },
+    {
+      "model": "Realme 3 Pro",
+      "variant": "64 GB",
+      "price": "₹13,999",
+      "original_price": "₹15,999",
+      "discount": "13%"
+    },
+    {
+      "model": "Realme 5",
+      "variant": "64 GB",
+      "price": "₹9,999",
+      "original_price": "₹11,999",
+      "discount": "17%"
+    },
+    {
+      "model": "Realme 5 Pro",
+      "variant": "64 GB, 4 GB RAM",
+      "price": "₹12,999",
+      "original_price": "₹14,999",
+      "discount": "13%"
+    },
+    {
+      "model": "Realme 6i",
+      "variant": "64 GB",
+      "price": "₹12,999",
+      "original_price": "₹14,999",
+      "discount": "13%"
+    },
+    {
+      "model": "Realme 6",
+      "variant": "64 GB",
+      "price": "₹14,999",
+      "original_price": "₹16,999",
+      "discount": "12%"
+    },
+    {
+      "model": "Realme 6 Pro",
+      "variant": "64 GB",
+      "price": "₹17,999",
+      "original_price": "₹19,999",
+      "discount": "10%"
+    },
+    {
+      "model": "Realme 7i",
+      "variant": "64 GB",
+      "price": "₹11,999",
+      "original_price": "₹13,999",
+      "discount": "14%"
+    },
+    {
+      "model": "Realme 7",
+      "variant": "64 GB",
+      "price": "₹14,999",
+      "original_price": "₹16,999",
+      "discount": "12%"
+    },
+    {
+      "model": "Realme 7 Pro",
+      "variant": "128 GB",
+      "price": "₹19,999",
+      "original_price": "₹22,999",
+      "discount": "13%"
+    },
+    {
+      "model": "Realme 8i",
+      "variant": "64 GB",
+      "price": "₹13,999",
+      "original_price": "₹15,999",
+      "discount": "13%"
+    },
+    {
+      "model": "Realme 8",
+      "variant": "64 GB",
+      "price": "₹14,999",
+      "original_price": "₹17,999",
+      "discount": "17%"
+    },
+    {
+      "model": "Realme 8s",
+      "variant": "128 GB",
+      "price": "₹18,999",
+      "original_price": "₹21,999",
+      "discount": "14%"
+    },
+    {
+      "model": "Realme 8 Pro",
+      "variant": "128 GB",
+      "price": "₹19,999",
+      "original_price": "₹22,999",
+      "discount": "13%"
+    },
+    {
+      "model": "Realme 9i",
+      "variant": "128 GB",
+      "price": "₹14,999",
+      "original_price": "₹16,999",
+      "discount": "12%"
+    },
+    {
+      "model": "Realme 9 4G",
+      "variant": "64 GB",
+      "price": "₹12,999",
+      "original_price": "₹14,999",
+      "discount": "13%"
+    },
+    {
+      "model": "Realme 9 5G",
+      "variant": "128 GB",
+      "price": "₹16,999",
+      "original_price": "₹19,999",
+      "discount": "15%"
+    },
+    {
+      "model": "Realme 9 SE",
+      "variant": "128 GB",
+      "price": "₹19,999",
+      "original_price": "₹22,999",
+      "discount": "13%"
+    },
+    {
+      "model": "Realme 9 Pro 5G",
+      "variant": "128 GB",
+      "price": "₹20,999",
+      "original_price": "₹21,999",
+      "discount": "4%"
+    },
+    {
+      "model": "Realme 9 Pro+ 5G",
+      "variant": "128 GB",
+      "price": "₹21,990",
+      "original_price": "₹29,999",
+      "discount": "26%"
+    },
+    {
+      "model": "Realme GT 7 Pro",
+      "variant": "128 GB, 8 GB RAM",
+      "price": "₹37,999",
+      "original_price": "₹41,999",
+      "discount": "10%",
+      "model_name": "gt_7_pro"
+    },
+    {
+      "model": "Realme GT 6",
+      "variant": "128 GB, 8 GB RAM",
+      "price": "₹32,999",
+      "original_price": "₹35,999",
+      "discount": "8%",
+      "model_name": "gt_6"
+    },
+    {
+      "model": "Realme GT 6T",
+      "variant": "256 GB, 12 GB RAM",
+      "price": "₹39,999",
+      "original_price": "₹42,999",
+      "discount": "7%",
+      "model_name": "gt_6t"
+    },
+    {
+      "model": "Realme GT Neo 6",
+      "variant": "128 GB, 8 GB RAM",
+      "price": "₹28,999",
+      "original_price": "₹30,999",
+      "discount": "6%",
+      "model_name": "gt_neo_6"
+    },
+    {
+      "model": "Realme GT Neo 6 SE",
+      "variant": "256 GB, 12 GB RAM",
+      "price": "₹31,999",
+      "original_price": "₹35,999",
+      "discount": "11%",
+      "model_name": "gt_neo_6_se"
+    },
+    {
+      "model": "Realme GT 5",
+      "variant": "128 GB, 8 GB RAM",
+      "price": "₹29,999",
+      "original_price": "₹33,999",
+      "discount": "12%",
+      "model_name": "gt_5"
+    },
+    {
+      "model": "Realme GT 5 Pro",
+      "variant": "256 GB, 12 GB RAM",
+      "price": "₹39,999",
+      "original_price": "₹44,999",
+      "discount": "11%",
+      "model_name": "gt_5_pro"
+    },
+    {
+      "model": "Realme GT 5 240W",
+      "variant": "256 GB, 16 GB RAM",
+      "price": "₹41,999",
+      "original_price": "₹45,999",
+      "discount": "9%",
+      "model_name": "gt_5_240w"
+    }
+  ],
+  "offers": [
+    {
+      "type": "Bank Offer",
+      "description": "5% Unlimited Cashback on Flipkart Axis Bank Credit Card",
+      "terms": "T&C"
+    },
+    {
+      "type": "Bank Offer",
+      "description": "₹1000 Off On All Banks Credit and Debit Card Transactions.",
+      "terms": "T&C"
+    },
+    {
+      "type": "Special Price",
+      "description": "Get extra ₹6000 off (price inclusive of cashback/coupon)",
+      "terms": "T&C"
+    },
+    {
+      "type": "EMI Offer",
+      "description": "No cost EMI ₹5,333/month. Standard EMI also available",
+      "details": "View Plans"
+    },
+    {
+      "type": "Extra Offer",
+      "description": "Extra 100/- Off on Nothing Cable",
+      "terms": "T&C"
+    },
+    {
+      "type": "Extra Offer",
+      "description": "Extra 700/- Off on CMF Charger",
+      "terms": "T&C"
+    }
+  ]
+}

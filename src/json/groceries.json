@@ -1,0 +1,1482 @@
+[
+    {
+        "id": 1,
+        "title": "Organic Brown Rice",
+        "description": "Premium quality organic brown rice, rich in fiber and essential nutrients. Perfect for a healthy and balanced diet.",
+        "category": "groceries",
+        "price": 4.99,
+        "discountPercentage": 10.0,
+        "rating": 4.8,
+        "stock": 100,
+        "tags": [
+            "groceries",
+            "organic",
+            "rice"
+        ],
+        "brand": "Green Harvest",
+        "sku": "GRNHRVST1",
+        "weight": 2.5,
+        "dimensions": {
+            "width": 15.0,
+            "height": 20.0,
+            "depth": 5.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 3-5 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890123"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Organic%20Brown%20Rice/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Organic%20Brown%20Rice/thumbnail.png"
+    },
+    {
+        "id": 2,
+        "title": "Whole Grain Pasta",
+        "description": "Delicious and healthy whole grain pasta made from 100% durum wheat.",
+        "category": "groceries",
+        "price": 2.99,
+        "discountPercentage": 5.0,
+        "rating": 4.5,
+        "stock": 50,
+        "tags": [
+            "groceries",
+            "pasta",
+            "whole-grain"
+        ],
+        "brand": "Nature's Best",
+        "sku": "NBPST123",
+        "weight": 1.0,
+        "dimensions": {
+            "width": 10.0,
+            "height": 15.0,
+            "depth": 4.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 2-4 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890124"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Whole%20Grain%20Pasta/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Whole%20Grain%20Pasta/thumbnail.png"
+    },
+    {
+        "id": 3,
+        "title": "Fresh Apples",
+        "description": "Crisp and juicy apples, freshly harvested and packed for your convenience.",
+        "category": "groceries",
+        "price": 3.49,
+        "discountPercentage": 8.0,
+        "rating": 4.7,
+        "stock": 200,
+        "tags": [
+            "groceries",
+            "fruit",
+            "apples"
+        ],
+        "brand": "Orchard Fresh",
+        "sku": "ORCHF123",
+        "weight": 2.0,
+        "dimensions": {
+            "width": 10.0,
+            "height": 10.0,
+            "depth": 10.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 1-2 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890125"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Fresh%20Apples/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Fresh%20Apples/thumbnail.png"
+    },
+    {
+        "id": 4,
+        "title": "Organic Bananas",
+        "description": "Naturally ripened organic bananas, perfect for snacking or baking.",
+        "category": "groceries",
+        "price": 1.99,
+        "discountPercentage": 15.0,
+        "rating": 4.6,
+        "stock": 150,
+        "tags": [
+            "groceries",
+            "fruit",
+            "bananas"
+        ],
+        "brand": "Nature's Basket",
+        "sku": "NATBAN123",
+        "weight": 1.5,
+        "dimensions": {
+            "width": 12.0,
+            "height": 8.0,
+            "depth": 6.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 2-3 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890126"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Organic%20Bananas/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Organic%20Bananas/thumbnail.png"
+    },
+    {
+        "id": 5,
+        "title": "Almond Milk",
+        "description": "Dairy-free almond milk enriched with calcium and vitamin D.",
+        "category": "groceries",
+        "price": 3.99,
+        "discountPercentage": 10.0,
+        "rating": 4.8,
+        "stock": 80,
+        "tags": [
+            "groceries",
+            "milk",
+            "dairy-free"
+        ],
+        "brand": "Almond Delight",
+        "sku": "ALMNDLK123",
+        "weight": 1.2,
+        "dimensions": {
+            "width": 8.0,
+            "height": 20.0,
+            "depth": 5.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 3-4 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890127"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Almond%20Milk/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Almond%20Milk/thumbnail.png"
+    },
+    {
+        "id": 6,
+        "title": "Organic Honey",
+        "description": "Pure organic honey sourced from wildflower farms, perfect for natural sweetening.",
+        "category": "groceries",
+        "price": 5.49,
+        "discountPercentage": 12.0,
+        "rating": 4.9,
+        "stock": 60,
+        "tags": [
+            "groceries",
+            "honey",
+            "organic"
+        ],
+        "brand": "Sweet Nature",
+        "sku": "HNY12345",
+        "weight": 0.5,
+        "dimensions": {
+            "width": 6.0,
+            "height": 12.0,
+            "depth": 6.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 2-4 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890128"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Organic%20Honey/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Organic%20Honey/thumbnail.png"
+    },
+    {
+        "id": 7,
+        "title": "Whole Wheat Bread",
+        "description": "Soft and healthy whole wheat bread, freshly baked and perfect for sandwiches.",
+        "category": "groceries",
+        "price": 2.79,
+        "discountPercentage": 5.5,
+        "rating": 4.6,
+        "stock": 120,
+        "tags": [
+            "groceries",
+            "bread",
+            "whole wheat"
+        ],
+        "brand": "Baker's Choice",
+        "sku": "WWB123",
+        "weight": 0.8,
+        "dimensions": {
+            "width": 10.0,
+            "height": 8.0,
+            "depth": 5.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 1-2 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890129"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Whole%20Wheat%20Bread/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Whole%20Wheat%20Bread/thumbnail.png"
+    },
+    {
+        "id": 8,
+        "title": "Organic Eggs",
+        "description": "Fresh, free-range organic eggs, packed with protein and nutrients.",
+        "category": "groceries",
+        "price": 3.99,
+        "discountPercentage": 10.0,
+        "rating": 4.8,
+        "stock": 90,
+        "tags": [
+            "groceries",
+            "eggs",
+            "organic"
+        ],
+        "brand": "Farm Fresh",
+        "sku": "ORG123EGGS",
+        "weight": 1.0,
+        "dimensions": {
+            "width": 20.0,
+            "height": 10.0,
+            "depth": 8.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 1-2 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890130"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Organic%20Eggs/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Organic%20Eggs/thumbnail.png"
+    },
+    {
+        "id": 9,
+        "title": "Greek Yogurt",
+        "description": "Creamy and rich Greek yogurt, an excellent source of protein and probiotics.",
+        "category": "groceries",
+        "price": 1.99,
+        "discountPercentage": 8.0,
+        "rating": 4.7,
+        "stock": 70,
+        "tags": [
+            "groceries",
+            "yogurt",
+            "protein"
+        ],
+        "brand": "Yummy Dairy",
+        "sku": "GKY123",
+        "weight": 0.5,
+        "dimensions": {
+            "width": 7.0,
+            "height": 7.0,
+            "depth": 7.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 2-3 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890131"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Greek%20Yogurt/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Greek%20Yogurt/thumbnail.png"
+    },
+    {
+        "id": 10,
+        "title": "Peanut Butter",
+        "description": "Smooth and creamy peanut butter, rich in protein and healthy fats.",
+        "category": "groceries",
+        "price": 4.49,
+        "discountPercentage": 6.0,
+        "rating": 4.8,
+        "stock": 50,
+        "tags": [
+            "groceries",
+            "peanut butter",
+            "protein"
+        ],
+        "brand": "Nutty Spread",
+        "sku": "PB12345",
+        "weight": 0.8,
+        "dimensions": {
+            "width": 10.0,
+            "height": 10.0,
+            "depth": 5.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 2-3 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890132"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Peanut%20Butter/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Peanut%20Butter/thumbnail.png"
+    },
+    {
+        "id": 11,
+        "title": "Cereal Oats",
+        "description": "Gluten-free whole-grain oats, perfect for a healthy breakfast.",
+        "category": "groceries",
+        "price": 3.49,
+        "discountPercentage": 9.0,
+        "rating": 4.6,
+        "stock": 75,
+        "tags": [
+            "groceries",
+            "oats",
+            "breakfast"
+        ],
+        "brand": "Healthy Start",
+        "sku": "OTS123",
+        "weight": 0.9,
+        "dimensions": {
+            "width": 10.0,
+            "height": 15.0,
+            "depth": 4.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 1-3 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890133"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Cereal%20Oats/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Cereal%20Oats/thumbnail.png"
+    },
+    {
+        "id": 12,
+        "title": "Dark Chocolate",
+        "description": "Rich and smooth dark chocolate made from 70% cocoa.",
+        "category": "groceries",
+        "price": 2.99,
+        "discountPercentage": 8.0,
+        "rating": 4.7,
+        "stock": 90,
+        "tags": [
+            "groceries",
+            "chocolate",
+            "snack"
+        ],
+        "brand": "Cocoa Bliss",
+        "sku": "DKCHOC123",
+        "weight": 0.2,
+        "dimensions": {
+            "width": 8.0,
+            "height": 12.0,
+            "depth": 1.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 1-3 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890134"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Dark%20Chocolate/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Dark%20Chocolate/thumbnail.png"
+    },
+    {
+        "id": 13,
+        "title": "Olive Oil",
+        "description": "Extra virgin olive oil, perfect for cooking and salad dressing.",
+        "category": "groceries",
+        "price": 6.99,
+        "discountPercentage": 5.0,
+        "rating": 4.9,
+        "stock": 50,
+        "tags": [
+            "groceries",
+            "olive oil",
+            "cooking"
+        ],
+        "brand": "Pure Press",
+        "sku": "OLV123",
+        "weight": 1.0,
+        "dimensions": {
+            "width": 7.0,
+            "height": 25.0,
+            "depth": 7.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 2-4 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890135"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Olive%20Oil/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Olive%20Oil/thumbnail.png"
+    },
+    {
+        "id": 14,
+        "title": "Almonds",
+        "description": "Crunchy and nutritious almonds, great for snacking or cooking.",
+        "category": "groceries",
+        "price": 8.49,
+        "discountPercentage": 10.0,
+        "rating": 4.8,
+        "stock": 60,
+        "tags": [
+            "groceries",
+            "almonds",
+            "nuts"
+        ],
+        "brand": "Nut Haven",
+        "sku": "ALM123",
+        "weight": 0.5,
+        "dimensions": {
+            "width": 10.0,
+            "height": 15.0,
+            "depth": 4.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 1-3 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890136"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Almonds/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Almonds/thumbnail.png"
+    },
+    {
+        "id": 15,
+        "title": "Canned Tomatoes",
+        "description": "High-quality canned tomatoes, perfect for sauces and soups.",
+        "category": "groceries",
+        "price": 1.79,
+        "discountPercentage": 7.0,
+        "rating": 4.5,
+        "stock": 100,
+        "tags": [
+            "groceries",
+            "canned",
+            "tomatoes"
+        ],
+        "brand": "Tomato Pure",
+        "sku": "CNTMT123",
+        "weight": 0.4,
+        "dimensions": {
+            "width": 6.0,
+            "height": 10.0,
+            "depth": 6.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 2-3 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890137"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Canned%20Tomatoes/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Canned%20Tomatoes/thumbnail.png"
+    },
+    {
+        "id": 16,
+        "title": "Quinoa",
+        "description": "High-protein and gluten-free quinoa, ideal for healthy meals.",
+        "category": "groceries",
+        "price": 5.99,
+        "discountPercentage": 9.0,
+        "rating": 4.7,
+        "stock": 70,
+        "tags": [
+            "groceries",
+            "quinoa",
+            "healthy"
+        ],
+        "brand": "Super Grain",
+        "sku": "QN123",
+        "weight": 0.9,
+        "dimensions": {
+            "width": 12.0,
+            "height": 15.0,
+            "depth": 5.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 2-4 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890138"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Quinoa/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Quinoa/thumbnail.png"
+    },
+    {
+        "id": 17,
+        "title": "Frozen Berries",
+        "description": "Assorted frozen berries, perfect for smoothies and desserts.",
+        "category": "groceries",
+        "price": 6.49,
+        "discountPercentage": 10.0,
+        "rating": 4.6,
+        "stock": 40,
+        "tags": [
+            "groceries",
+            "berries",
+            "frozen"
+        ],
+        "brand": "Berry Bliss",
+        "sku": "FZBR123",
+        "weight": 0.5,
+        "dimensions": {
+            "width": 10.0,
+            "height": 20.0,
+            "depth": 4.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 3-5 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890139"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Frozen%20Berries/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Frozen%20Berries/thumbnail.png"
+    },
+    {
+        "id": 18,
+        "title": "Vegetable Soup Mix",
+        "description": "Dried vegetable soup mix, easy to prepare and nutritious.",
+        "category": "groceries",
+        "price": 3.49,
+        "discountPercentage": 6.0,
+        "rating": 4.4,
+        "stock": 100,
+        "tags": [
+            "groceries",
+            "soup",
+            "mix"
+        ],
+        "brand": "Soup Delight",
+        "sku": "VSM123",
+        "weight": 0.3,
+        "dimensions": {
+            "width": 8.0,
+            "height": 12.0,
+            "depth": 2.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 1-2 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890162"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Vegetable%20Soup%20Mix/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Vegetable%20Soup%20Mix/thumbnail.png"
+    },
+    {
+        "id": 19,
+        "title": "Granola Bars",
+        "description": "Healthy granola bars made with oats, nuts, and honey. Perfect for on-the-go snacks.",
+        "category": "groceries",
+        "price": 4.49,
+        "discountPercentage": 7.5,
+        "rating": 4.6,
+        "stock": 60,
+        "tags": [
+            "groceries",
+            "snacks",
+            "granola"
+        ],
+        "brand": "Crunchy Treats",
+        "sku": "GRNB123",
+        "weight": 0.3,
+        "dimensions": {
+            "width": 10.0,
+            "height": 15.0,
+            "depth": 4.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 2-4 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890140"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Granola%20Bars/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Granola%20Bars/thumbnail.png"
+    },
+    {
+        "id": 20,
+        "title": "Green Tea",
+        "description": "Pure green tea leaves, rich in antioxidants and perfect for a refreshing drink.",
+        "category": "groceries",
+        "price": 3.99,
+        "discountPercentage": 5.0,
+        "rating": 4.8,
+        "stock": 80,
+        "tags": [
+            "groceries",
+            "tea",
+            "green"
+        ],
+        "brand": "Tea Time",
+        "sku": "GT123",
+        "weight": 0.2,
+        "dimensions": {
+            "width": 8.0,
+            "height": 10.0,
+            "depth": 5.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 2-3 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890141"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Green%20Tea/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Green%20Tea/thumbnail.png"
+    },
+    {
+        "id": 21,
+        "title": "Whole Wheat Pasta",
+        "description": "Nutritious whole wheat pasta, ideal for healthy meals.",
+        "category": "groceries",
+        "price": 2.79,
+        "discountPercentage": 6.5,
+        "rating": 4.7,
+        "stock": 50,
+        "tags": [
+            "groceries",
+            "pasta",
+            "whole wheat"
+        ],
+        "brand": "Healthy Harvest",
+        "sku": "WWP123",
+        "weight": 0.5,
+        "dimensions": {
+            "width": 10.0,
+            "height": 20.0,
+            "depth": 3.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 2-3 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890142"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Whole%20Wheat%20Pasta/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Whole%20Wheat%20Pasta/thumbnail.png"
+    },
+    {
+        "id": 22,
+        "title": "Rice Cakes",
+        "description": "Crispy rice cakes, perfect for light snacking.",
+        "category": "groceries",
+        "price": 1.99,
+        "discountPercentage": 5.0,
+        "rating": 4.5,
+        "stock": 75,
+        "tags": [
+            "groceries",
+            "snacks",
+            "rice cakes"
+        ],
+        "brand": "Snack Light",
+        "sku": "RC123",
+        "weight": 0.2,
+        "dimensions": {
+            "width": 12.0,
+            "height": 15.0,
+            "depth": 3.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 1-2 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890143"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Rice%20Cakes/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Rice%20Cakes/thumbnail.png"
+    },
+    {
+        "id": 23,
+        "title": "Coconut Milk",
+        "description": "Rich and creamy coconut milk, perfect for cooking and baking.",
+        "category": "groceries",
+        "price": 2.49,
+        "discountPercentage": 7.0,
+        "rating": 4.6,
+        "stock": 40,
+        "tags": [
+            "groceries",
+            "coconut milk",
+            "cooking"
+        ],
+        "brand": "Tropical Kitchen",
+        "sku": "CM123",
+        "weight": 0.4,
+        "dimensions": {
+            "width": 8.0,
+            "height": 12.0,
+            "depth": 8.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 2-4 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890144"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Coconut%20Milk/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Coconut%20Milk/thumbnail.png"
+    },
+    {
+        "id": 24,
+        "title": "Honey",
+        "description": "Pure natural honey, ideal for sweetening and cooking.",
+        "category": "groceries",
+        "price": 4.99,
+        "discountPercentage": 8.0,
+        "rating": 4.9,
+        "stock": 35,
+        "tags": [
+            "groceries",
+            "honey",
+            "sweetener"
+        ],
+        "brand": "Golden Hive",
+        "sku": "HNY123",
+        "weight": 0.5,
+        "dimensions": {
+            "width": 10.0,
+            "height": 15.0,
+            "depth": 5.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 1-3 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890145"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Honey/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Honey/thumbnail.png"
+    },
+    {
+        "id": 25,
+        "title": "Chia Seeds",
+        "description": "Nutrient-rich chia seeds, great for smoothies and puddings.",
+        "category": "groceries",
+        "price": 3.79,
+        "discountPercentage": 5.5,
+        "rating": 4.8,
+        "stock": 65,
+        "tags": [
+            "groceries",
+            "chia",
+            "superfood"
+        ],
+        "brand": "Healthy Seeds",
+        "sku": "CHS123",
+        "weight": 0.4,
+        "dimensions": {
+            "width": 10.0,
+            "height": 15.0,
+            "depth": 4.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 2-4 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890146"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Chia%20Seeds/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Chia%20Seeds/thumbnail.png"
+    },
+    {
+        "id": 26,
+        "title": "Quinoa",
+        "description": "High-protein quinoa, a versatile grain substitute for healthy meals.",
+        "category": "groceries",
+        "price": 6.99,
+        "discountPercentage": 5.0,
+        "rating": 4.7,
+        "stock": 30,
+        "tags": [
+            "groceries",
+            "grains",
+            "quinoa"
+        ],
+        "brand": "Nature's Grains",
+        "sku": "QNA123",
+        "weight": 1.0,
+        "dimensions": {
+            "width": 12.0,
+            "height": 15.0,
+            "depth": 8.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 3-5 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890147"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Quinoa/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Quinoa/thumbnail.png"
+    },
+    {
+        "id": 27,
+        "title": "Maple Syrup",
+        "description": "Premium maple syrup, ideal for pancakes and waffles.",
+        "category": "groceries",
+        "price": 8.99,
+        "discountPercentage": 6.5,
+        "rating": 4.8,
+        "stock": 20,
+        "tags": [
+            "groceries",
+            "syrup",
+            "maple"
+        ],
+        "brand": "Golden Tree",
+        "sku": "MSYR123",
+        "weight": 0.6,
+        "dimensions": {
+            "width": 8.0,
+            "height": 12.0,
+            "depth": 6.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 2-3 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890148"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Maple%20Syrup/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Maple%20Syrup/thumbnail.png"
+    },
+    {
+        "id": 28,
+        "title": "Dried Apricots",
+        "description": "Sweet and tangy dried apricots, a perfect snack or recipe addition.",
+        "category": "groceries",
+        "price": 4.99,
+        "discountPercentage": 7.0,
+        "rating": 4.6,
+        "stock": 40,
+        "tags": [
+            "groceries",
+            "dried fruits",
+            "apricots"
+        ],
+        "brand": "Fruit Medley",
+        "sku": "DAPR123",
+        "weight": 0.5,
+        "dimensions": {
+            "width": 10.0,
+            "height": 15.0,
+            "depth": 5.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 1-3 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890149"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Dried%20Apricots/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Dried%20Apricots/thumbnail.png"
+    },
+    {
+        "id": 29,
+        "title": "Almond Butter",
+        "description": "Creamy almond butter with no added sugar or preservatives.",
+        "category": "groceries",
+        "price": 7.99,
+        "discountPercentage": 6.0,
+        "rating": 4.9,
+        "stock": 25,
+        "tags": [
+            "groceries",
+            "butter",
+            "almond"
+        ],
+        "brand": "Nutty Spread",
+        "sku": "ABTR123",
+        "weight": 0.4,
+        "dimensions": {
+            "width": 10.0,
+            "height": 10.0,
+            "depth": 5.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 2-4 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890150"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Almond%20Butter/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Almond%20Butter/thumbnail.png"
+    },
+    {
+        "id": 30,
+        "title": "Canned Tuna",
+        "description": "High-quality canned tuna in olive oil, great for quick meals.",
+        "category": "groceries",
+        "price": 2.99,
+        "discountPercentage": 5.5,
+        "rating": 4.5,
+        "stock": 50,
+        "tags": [
+            "groceries",
+            "canned",
+            "tuna"
+        ],
+        "brand": "Ocean Catch",
+        "sku": "CTNA123",
+        "weight": 0.3,
+        "dimensions": {
+            "width": 8.0,
+            "height": 10.0,
+            "depth": 8.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 2-3 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890151"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Canned%20Tuna/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Canned%20Tuna/thumbnail.png"
+    },
+    {
+        "id": 31,
+        "title": "Sunflower Oil",
+        "description": "High-quality sunflower oil for cooking and baking.",
+        "category": "groceries",
+        "price": 5.49,
+        "discountPercentage": 6.5,
+        "rating": 4.7,
+        "stock": 45,
+        "tags": [
+            "groceries",
+            "oil",
+            "cooking"
+        ],
+        "brand": "Golden Harvest",
+        "sku": "SFO123",
+        "weight": 1.0,
+        "dimensions": {
+            "width": 10.0,
+            "height": 30.0,
+            "depth": 10.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 2-4 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890152"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Sunflower%20Oil/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Sunflower%20Oil/thumbnail.png"
+    },
+    {
+        "id": 32,
+        "title": "Organic Oatmeal",
+        "description": "100% organic oatmeal, perfect for a nutritious breakfast.",
+        "category": "groceries",
+        "price": 3.49,
+        "discountPercentage": 5.0,
+        "rating": 4.8,
+        "stock": 55,
+        "tags": [
+            "groceries",
+            "oats",
+            "breakfast"
+        ],
+        "brand": "Healthy Grains",
+        "sku": "OO123",
+        "weight": 0.7,
+        "dimensions": {
+            "width": 15.0,
+            "height": 20.0,
+            "depth": 8.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 1-3 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890153"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Organic%20Oatmeal/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Organic%20Oatmeal/thumbnail.png"
+    },
+    {
+        "id": 33,
+        "title": "Almond Milk",
+        "description": "Unsweetened almond milk, a great alternative to dairy.",
+        "category": "groceries",
+        "price": 3.99,
+        "discountPercentage": 5.5,
+        "rating": 4.9,
+        "stock": 35,
+        "tags": [
+            "groceries",
+            "milk",
+            "almond"
+        ],
+        "brand": "NutriMilk",
+        "sku": "AM123",
+        "weight": 1.0,
+        "dimensions": {
+            "width": 8.0,
+            "height": 20.0,
+            "depth": 8.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 2-3 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890154"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Almond%20Milk/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Almond%20Milk/thumbnail.png"
+    },
+    {
+        "id": 34,
+        "title": "Canned Chickpeas",
+        "description": "Ready-to-use canned chickpeas for healthy recipes.",
+        "category": "groceries",
+        "price": 1.49,
+        "discountPercentage": 5.0,
+        "rating": 4.6,
+        "stock": 70,
+        "tags": [
+            "groceries",
+            "canned",
+            "chickpeas"
+        ],
+        "brand": "Pure Legumes",
+        "sku": "CCP123",
+        "weight": 0.4,
+        "dimensions": {
+            "width": 8.0,
+            "height": 12.0,
+            "depth": 8.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 1-2 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890155"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Canned%20Chickpeas/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Canned%20Chickpeas/thumbnail.png"
+    },
+    {
+        "id": 35,
+        "title": "Dark Chocolate",
+        "description": "Rich and smooth dark chocolate, perfect for snacking or baking.",
+        "category": "groceries",
+        "price": 2.99,
+        "discountPercentage": 7.0,
+        "rating": 4.9,
+        "stock": 60,
+        "tags": [
+            "groceries",
+            "chocolate",
+            "dark"
+        ],
+        "brand": "Choco Delight",
+        "sku": "DCH123",
+        "weight": 0.2,
+        "dimensions": {
+            "width": 10.0,
+            "height": 15.0,
+            "depth": 1.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 1-3 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890156"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Dark%20Chocolate/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Dark%20Chocolate/thumbnail.png"
+    },
+    {
+        "id": 36,
+        "title": "Whole Wheat Bread",
+        "description": "Freshly baked whole wheat bread, ideal for sandwiches or toast.",
+        "category": "groceries",
+        "price": 3.49,
+        "discountPercentage": 4.5,
+        "rating": 4.7,
+        "stock": 50,
+        "tags": [
+            "groceries",
+            "bread",
+            "whole wheat"
+        ],
+        "brand": "Baker's Delight",
+        "sku": "WWB123",
+        "weight": 0.8,
+        "dimensions": {
+            "width": 15.0,
+            "height": 20.0,
+            "depth": 7.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 1-2 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890157"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Whole%20Wheat%20Bread/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Whole%20Wheat%20Bread/thumbnail.png"
+    },
+    {
+        "id": 37,
+        "title": "Coconut Water",
+        "description": "Fresh and hydrating coconut water, perfect for rehydration.",
+        "category": "groceries",
+        "price": 2.99,
+        "discountPercentage": 3.0,
+        "rating": 4.8,
+        "stock": 60,
+        "tags": [
+            "groceries",
+            "beverages",
+            "coconut water"
+        ],
+        "brand": "Tropical Fresh",
+        "sku": "CWT123",
+        "weight": 0.5,
+        "dimensions": {
+            "width": 8.0,
+            "height": 20.0,
+            "depth": 8.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 1-2 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890158"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Coconut%20Water/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Coconut%20Water/thumbnail.png"
+    },
+    {
+        "id": 38,
+        "title": "Granola Bars",
+        "description": "Healthy and delicious granola bars with oats, nuts, and honey.",
+        "category": "groceries",
+        "price": 4.49,
+        "discountPercentage": 5.5,
+        "rating": 4.6,
+        "stock": 40,
+        "tags": [
+            "groceries",
+            "snacks",
+            "granola"
+        ],
+        "brand": "Nature's Snack",
+        "sku": "GBR123",
+        "weight": 0.3,
+        "dimensions": {
+            "width": 10.0,
+            "height": 15.0,
+            "depth": 5.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 2-3 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890159"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Granola%20Bars/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Granola%20Bars/thumbnail.png"
+    },
+    {
+        "id": 39,
+        "title": "Pineapple",
+        "description": "Fresh and juicy pineapple, perfect for smoothies or snacking.",
+        "category": "groceries",
+        "price": 4.99,
+        "discountPercentage": 3.0,
+        "rating": 4.7,
+        "stock": 50,
+        "tags": [
+            "groceries",
+            "fruit",
+            "pineapple"
+        ],
+        "brand": "Fresh Fruit",
+        "sku": "PIN123",
+        "weight": 1.2,
+        "dimensions": {
+            "width": 10.0,
+            "height": 15.0,
+            "depth": 10.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 1-3 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890160"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Pineapple/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Pineapple/thumbnail.png"
+    },
+    {
+        "id": 40,
+        "title": "Peanut Butter",
+        "description": "Smooth and creamy peanut butter, a classic spread for sandwiches.",
+        "category": "groceries",
+        "price": 3.99,
+        "discountPercentage": 4.0,
+        "rating": 4.8,
+        "stock": 70,
+        "tags": [
+            "groceries",
+            "butter",
+            "peanut"
+        ],
+        "brand": "Nutty Spread",
+        "sku": "PBT123",
+        "weight": 0.5,
+        "dimensions": {
+            "width": 10.0,
+            "height": 12.0,
+            "depth": 8.0
+        },
+        "warrantyInformation": "No warranty applicable",
+        "shippingInformation": "Ships within 1-2 business days",
+        "availabilityStatus": "In Stock",
+        "returnPolicy": "7 days return policy",
+        "minimumOrderQuantity": 1,
+        "meta": {
+            "createdAt": "2024-05-23T08:56:21.618Z",
+            "updatedAt": "2024-05-23T08:56:21.618Z",
+            "barcode": "1234567890161"
+        },
+        "images": [
+            "https://cdn.dummyjson.com/products/images/groceries/Peanut%20Butter/1.png"
+        ],
+        "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Peanut%20Butter/thumbnail.png"
+    }
+]

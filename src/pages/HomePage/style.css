@@ -1,0 +1,37 @@
+.home-div{
+  height: 100svh;
+}
+
+.custom-card {
+  /* width: 96vw; */
+  /* margin-top: 10%; */
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  /* Optional: for rounded corners */
+}
+
+.custom-card li {
+  /* width: 7rem; */
+  list-style: none;
+  font-size: small;
+}
+
+.category {
+  overflow-x: auto;
+}
+
+.category-item {
+  width: max-content;
+}
+
+.category-img {
+  width: 60px;
+  height: 60px;
+}
+
+.category-name{
+  position: absolute;
+  top: -20%;
+  left: 10px;
+}

@@ -1,0 +1,46 @@
+{
+    "categories": [
+        {
+            "name": "Grocery",
+            "image_name": "grocery.webp",
+            "is_open": false,
+            "brands": [ "Fruits", "Vegetables", "Dairy Products", "Grains and Pasta", "Beverages", "Snacks", "Baking Ingredients", "Frozen Foods", "Canned Goods", "Spices and Condiments", "Oils and Vinegars", "Household Items", "Pet Supplies" ]
+        },
+        {
+            "name": "Electronics",
+            "image_name": "electronics.webp",
+            "is_open": false,
+            "brands":[ "Laptops and Computers", "Tablets", "Headphones and Earbuds", "Home Appliances", "Cameras and Photography", "Smartwatches and Wearables", "Gaming Consoles", "Personal Care Electronics", "Power Banks and Chargers", "Printers and Scanners", "Smart Home Devices", "Drones", "Virtual Reality Headsets" ]
+        },
+        {
+            "name": "Mobiles",
+            "image_name": "mobiles.webp",
+            "is_open": false,
+            "brands":[ "Apple", "Samsung", "Google Pixel", "Xiaomi", "OnePlus", "Realme", "Oppo", "Vivo", "Huawei", "Motorola", "Sony", "Asus", "Nokia", "LG", "Lenovo", "Infinix", "Tecno", "iQOO", "Poco", "Nothing", "Honor", "Meizu", "ZTE" ]              
+        },
+        {
+            "name": "Fashion",
+            "image_name": "fashion.webp",
+            "is_open": false,
+            "brands":[ "Men's Clothing", "Men's Footwear", "Men's Accessories", "Women's Clothing", "Women's Footwear", "Women's Accessories", "Kid's Clothing", "Kid's Footwear", "Kid's Accessories", "Ethnic Wear", "Winter Wear", "Sportswear", "Innerwear and Sleepwear", "Watches", "Sunglasses and Eyewear", "Bags, Backpacks, and Luggage", "Jewelry", "Caps and Hats", "Belts, Ties, and Wallets", "Scarves and Stoles" ]
+        },
+        {
+            "name": "Appliances",
+            "image_name": "appliances.webp",
+            "is_open": false,
+            "brands":[ "Refrigerators", "Washing Machines", "Air Conditioners", "Microwave Ovens", "Water Purifiers", "Vacuum Cleaners", "Air Purifiers", "Dishwashers", "Kitchen Chimneys", "Geysers and Water Heaters", "Room Heaters", "Fans and Air Coolers", "Mixer Grinders", "Induction Cooktops", "Electric Kettles", "Toasters and Sandwich Makers", "Hand Blenders", "Food Processors", "Irons", "Sewing Machines", "Electric Rice Cookers", "Juicers", "Coffee Makers", "OTG Ovens", "Deep Fryers" ]
+        },
+        {
+            "name": "Home & Furniture",
+            "image_name": "home_and_furniture.webp",
+            "is_open": false,
+            "brands":[ "Home Furniture", "Kitchen and Dining Essentials", "Home Décor", "Lighting and Lamps", "Bedding and Mattresses", "Curtains and Blinds", "Carpets and Rugs", "Wall Art and Paintings", "Clocks", "Bathroom Accessories", "Cleaning Supplies", "Doormats", "Pillows and Cushions", "Wardrobes and Cabinets", "Shoe Racks", "Bookshelves", "TV Units and Entertainment Centers" ]
+        },
+        {
+            "name": "Toys & Baby Care",
+            "image_name": "toys_and_baby_care.webp",
+            "is_open": false,
+            "brands":[ "Soft Toys", "Educational Toys", "Action Figures", "Dolls and Dollhouses", "Board Games and Puzzles", "Remote Control Toys", "Building Blocks and Construction Toys", "Outdoor Toys", "Ride-On Toys", "Musical Toys", "Arts and Crafts Toys", "Baby Clothing", "Baby Footwear", "Diapers and Wipes", "Baby Bathing Products", "Baby Skin Care", "Baby Feeding and Nursing", "Baby Furniture", "Baby Carriers and Strollers", "Baby Health and Safety", "Baby Bedding and Mattresses", "Teethers and Rattles", "Kids' Stationery" ]
+        }
+    ]
+}

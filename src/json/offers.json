@@ -1,0 +1,116 @@
+{
+    "groceries": [
+        "Get 10% off on all groceries for purchases above ₹1,000. Valid on weekends only.",
+        "Buy 1 Get 1 Free on select daily essentials. Offer valid while stocks last.",
+        "Flat ₹50 cashback on orders above ₹500 using XYZ wallet.",
+        "Special Offer: Save up to ₹200 on your monthly grocery subscription."
+    ],
+    "laptops": [
+        "₹5,000 off on premium laptops like Dell, HP, and Lenovo models. No-cost EMI available.",
+        "Exchange your old laptop and get an extra discount of up to ₹10,000.",
+        "Free 1-year extended warranty on select laptop models. Applicable for online orders only.",
+        "Get an exclusive tech bundle worth ₹2,000 free with every new laptop purchase."
+    ],
+    "tablets": [
+        "Flat ₹2,000 off on the latest iPad and Samsung Galaxy tablets. No-cost EMI starts at ₹999/month.",
+        "Save ₹1,500 on budget-friendly tablets. Free delivery included.",
+        "Exchange your old tablet and get up to ₹3,000 off on your new one.",
+        "Special Launch Offer: Pre-order and get a free stylus worth ₹1,000."
+    ],
+    "mobile-accessories": [
+        "Buy 2 mobile accessories and get 1 free. Includes cases, chargers, and more.",
+        "Flat 25% off on premium headphones from Bose, JBL, and Sony.",
+        "Get free shipping on all orders above ₹499. Valid for a limited time only.",
+        "Save ₹100 on power banks of 10,000mAh and above."
+    ],
+    "mens-shirts": [
+        "Flat 50% off on premium brands like Peter England, Arrow, and Louis Philippe.",
+        "Buy 3 shirts and get 1 absolutely free. Mix and match styles.",
+        "Save ₹300 on orders above ₹2,000. Available only during the festive sale.",
+        "Exclusive Online Offer: Extra 10% off with XYZ Bank Credit Card."
+    ],
+    "mens-shoes": [
+        "Flat ₹1,000 off on branded sneakers from Adidas, Puma, and Nike.",
+        "Buy 1 pair of formal shoes and get 50% off on the second pair.",
+        "Special Edition Launch: Save 20% on all new arrivals in men's shoes.",
+        "Extra ₹500 cashback on orders above ₹5,000. Use code SHOE500."
+    ],
+    "womens-dresses": [
+        "Up to 60% off on summer collections. Includes maxi, midi, and mini dresses.",
+        "Save ₹500 on designer wear for women. Valid for purchases above ₹3,000.",
+        "Buy 2 dresses and get ₹800 off. Mix and match across categories.",
+        "Limited-Time Offer: Free scarf with every dress purchase."
+    ],
+    "furniture": [
+        "Flat 30% off on sofas and beds. Offer valid until the end of the month.",
+        "Extra 10% discount on orders above ₹10,000. Use code HOME10.",
+        "Save ₹2,000 on modular furniture. Applicable on select brands only.",
+        "Special Offer: Free installation and delivery on all furniture orders."
+    ],
+    "beauty": [
+        "Save up to 30% on skincare products from top brands like Lakme, Maybelline, and Nykaa.",
+        "Flat ₹150 cashback on orders above ₹1,000. Valid for a limited time only.",
+        "Buy 2 beauty products and get the 3rd one at 50% off.",
+        "Special Combo Deal: Get a free makeup pouch with orders above ₹2,000."
+    ],
+    "mens-watches": [
+        "Flat 25% off on analog and digital watches.",
+        "Get a free strap with every premium watch purchase.",
+        "Save ₹500 on smartwatches. Offer valid this weekend only.",
+        "Limited-Time Offer: Up to 40% off on branded men's watches."
+    ],
+    "womens-shoes": [
+        "Up to 50% off on heels, flats, and sneakers.",
+        "Buy 1 Get 1 Free on select women's footwear.",
+        "₹300 cashback on orders above ₹2000.",
+        "Special Edition: Extra 10% off on premium brands like Clarks and Hush Puppies."
+    ],
+    "womens-watches": [
+        "Flat ₹700 off on designer watches for women.",
+        "Get a free bracelet with every premium watch.",
+        "Save up to 30% on smartwatches. Includes Fitbit and Garmin.",
+        "Limited Offer: Free delivery on all orders above ₹999."
+    ],
+    "womens-bags": [
+        "Extra ₹500 off on handbags priced above ₹3000.",
+        "Flat 40% discount on select tote bags and clutches.",
+        "Get a free wallet with every backpack purchase.",
+        "Buy 2 handbags and get ₹1000 cashback."
+    ],
+    "womens-jewellery": [
+        "Save up to 20% on gold and diamond jewellery.",
+        "Buy 1 Get 1 Free on artificial jewellery sets.",
+        "Exclusive Launch Offer: ₹500 off on orders above ₹2500.",
+        "Flat ₹300 cashback on earrings and necklaces."
+    ],
+    "tops": [
+        "Flat 30% off on casual and formal tops.",
+        "Buy 3 tops and get 1 free. Mix and match styles.",
+        "₹150 cashback on orders above ₹1000.",
+        "Special Offer: Extra 10% off for first-time buyers."
+    ],
+    "kitchen-accessories": [
+        "Save up to 35% on cookware sets and utensils.",
+        "Flat ₹200 off on orders above ₹1500.",
+        "Buy 2 kitchen tools and get 1 free.",
+        "Special Offer: Free delivery on all orders."
+    ],
+    "home-decoration": [
+        "Up to 40% off on wall art and decor items.",
+        "Buy 2 cushions and get ₹500 cashback.",
+        "Save an additional 10% with code HOMEDECOR10.",
+        "Free shipping on orders above ₹1000."
+    ],
+    "skin-care": [
+        "Flat 30% off on face creams, serums, and masks.",
+        "Buy 2 skin care products and get the 3rd free.",
+        "Save ₹200 on orders above ₹1500. Use code SKINLOVE.",
+        "Limited Offer: Free sunscreen with purchases above ₹2000."
+    ],
+    "sports-accessories": [
+        "Save up to 25% on fitness bands and gym equipment.",
+        "Flat ₹500 off on orders above ₹4000.",
+        "Buy 2 sports items and get ₹700 cashback.",
+        "Special Offer: Free water bottle with every purchase above ₹2000."
+    ]
+}

@@ -1,0 +1,81 @@
+.mbl-category.custom-card {
+  width: 100px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.308);
+  border-radius: 8px;
+}
+
+.scrollable-div {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 100%;
+}
+
+.scrollable-div::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollable-div::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.image-wrapper {
+  width: 10%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-wrapper img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+.container-item {
+  width: 300px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+}
+
+.header {
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.content {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.model,
+.storage {
+  font-weight: bold;
+}
+
+.phone-image {
+  margin: 20px 0;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.features {
+  margin-top: 20px;
+}
+
+.features p {
+  margin-bottom: 5px;
+}
+
+.custom-card1 p{
+  text-decoration: none;
+}
