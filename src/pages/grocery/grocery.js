@@ -1,15 +1,7 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
-import { decryptObject } from '../../functions';
 
 const Grocery = ({ product, index }) => {
-
-    useEffect(() => {
-      const decrypted = decryptObject()
-      console.log("decrypted",decrypted);
-      
-    }, [])
-    
 
     const handleClick = (product, index) => {
         localStorage.setItem('productItem', JSON.stringify(product));
@@ -40,7 +32,7 @@ const Grocery = ({ product, index }) => {
                             background: '#fff', // Optional: for a slight dark overlay effect
                             textAlign: 'center',
                         }}>
-                        <p className='header bg-primary text-capitalize d-flex justify-content-center align-items-center py-2 fw-medium' >{product?.title}</p>
+                        <p className='customcard-header bg-primary text-capitalize fw-medium mb-0'>{product?.title}</p>
                         <div className='d-block flex-fill h-100 align-items-end'>
                         <p className='mb-0'><strong>Starting from</strong> ${product?.price}*</p>
                         <p className=''>*including coupon offer</p>

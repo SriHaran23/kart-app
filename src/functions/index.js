@@ -58,7 +58,7 @@ export const fetchProducts = async ( categories, categoryData, setProducts, setL
         var temp = []
         for (let index = 0; index < allProducts.length; index++) {
             if (allProducts[index]?.category == categories[categoryData]) {
-                console.log("allProducts", allProducts[index]);
+                // console.log("allProducts", allProducts[index]);
                 temp = [...temp, allProducts[index]]
             }
         }

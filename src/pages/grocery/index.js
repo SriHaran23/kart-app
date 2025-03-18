@@ -4,13 +4,15 @@ import './style.css'
 import Grocery from './grocery';
 import CartLoader from '../../components/loader';
 import { fetchProducts } from '../../functions';
-import { CategoryContext } from '../../App';
+import { CategoryContext, CompleteContext } from '../../App';
 
 const Groceries = () => {
+  const { selectedCategory, setSelectedCategory } = useContext(CategoryContext)
+  const { completeData, setCompleteData } = useContext(CompleteContext)
 
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [category, setCategory] = useState();
+  const [category, setCategory] = useState(completeData?.category?.category);
   const categories = {
     Groceries: "groceries",
     // Mobiles: "smartphones",
@@ -20,20 +22,19 @@ const Groceries = () => {
     "Home & Furniture": ["furniture", "home-decoration"],
     "Toys & Baby Care": ["beauty", "skin-care", "sports-accessories"],
   };
-    const {selectedCategory, setSelectedCategory}= useContext(CategoryContext)
-  const [selectedCategoryType, setSelectedCategoryType] = useState(categories[selectedCategory]);
+  const [selectedCategoryType, setSelectedCategoryType] = useState(categories[category]);
   const [activeTab, setActiveTab] = useState(0); // Tracks the active tab
 
   useEffect(() => {
-    const categoryData = localStorage.getItem('category');
-    if (categoryData) {
-      setCategory(categoryData)
-    }
-    console.log("categoryData", selectedCategory);
-    setSelectedCategoryType(categories[selectedCategory])
+    // const categoryData = localStorage.getItem('category');
+    // if (categoryData) {
+    //   setCategory(categoryData)
+    // }
+    // console.log("categoryData", categoryData);
+    // setSelectedCategoryType(categories[selectedCategory])
 
-    fetchProducts(categories, categoryData, setProducts, setLoading);
-    // console.log("fff",selectedCategoryType[activeTab]);
+    fetchProducts(categories, category, setProducts, setLoading);
+    console.log("completeData?.category",completeData?.category);
 
   }, [/* activeTab */]);
 
@@ -47,10 +48,17 @@ const Groceries = () => {
       {loading ? <CartLoader />
         : <div className='custom-card p-3 m-4 d-flex justify-content-start '>
           <div className="card-body p-auto">
-            <h4 className='border-bottom mb-2 pb-2'>{selectedCategory}</h4>
-            <div className='row row-cols-5 px-4'>
+            <div className='d-flex gap-3 align-items-center border-bottom mb-3 pb-1 '>
+              <img
+                className='text-center category-img '
+                src={`assets/img/categories/${completeData?.category?.image_name}`}
+                alt={category?.category}
+              />
+              <p className='fs-4 fw-semibold'>{selectedCategory}</p>
+            </div>
+            <div className='row row-cols-1 row-cols-lg-5 px-0 row-gap-4'>
               {products?.map((product, index) => product?.category === selectedCategory?.toLowerCase() && (
-                <div key={index} className="col py-3">
+                <div key={index} className="col py-0">
                   <Grocery product={product} index={index} category={selectedCategory} />
                 </div>
               ))}
@@ -68,17 +76,17 @@ const Groceries = () => {
                     </li>
                   ))}
                 </ul>
-                  {Array.isArray(categories[selectedCategory]) && (
-                    <div className="tab-pane active row row-cols-4 row-gap-4 p-2 mt-1">
-                      {products?.map((product, productIndex) => selectedCategoryType[activeTab] == product?.category && (
-                        <div className="col" key={productIndex}>
-                          <Grocery product={product} index={productIndex} category={selectedCategory} />
-                          {console.log("uuuu", product?.category)}
+                {Array.isArray(categories[selectedCategory]) && (
+                  <div className="tab-pane active row row-cols-4 row-gap-4 p-2 mx-2 mt-1">
+                    {products?.map((product, productIndex) => selectedCategoryType[activeTab] == product?.category && (
+                      <div className="col" key={productIndex}>
+                        <Grocery product={product} index={productIndex} category={selectedCategory} />
+                        {console.log("uuuu", product?.category)}
 
-                        </div>
-                      ))}
-                    </div>
-                  )}
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             }
           </div>

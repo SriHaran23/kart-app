@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import LoginPage from '../../pages/LogIn'
+import LoginPage from '../LogIn'
 import ArrowUp from '../../svg/ArrowUp'
 import ArrowDown from '../../svg/ArrowDown'
 import { toast, ToastContainer } from 'react-toastify'
@@ -88,7 +88,7 @@ const ListItems = ({ login, isOpen1, setIsOpen1, setLogin }) => {
                     </div>
                 </div>
             </div>
-            <ToastContainer position="top-right" autoClose={3000} />
+            <ToastContainer position="top-right" autoClose={1500} />
         </div>
     )
 }

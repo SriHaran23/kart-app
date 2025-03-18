@@ -12,6 +12,7 @@ import OrderIcon from '../../svg/OrderIcon';
 import { useNavigate } from 'react-router-dom';
 import ListItems from './listItems';
 import { CategoryContext, LoginContext } from '../../App';
+import { decryptObject } from '../../functions';
 
 const Navbar = ({ theme, setTheme }) => {
     const [searchTerm, setSearchTerm] = useState('');
@@ -25,7 +26,7 @@ const Navbar = ({ theme, setTheme }) => {
     const colors = ['#234C9B', '#8242A0', '#14B2CD', '#E73F7D', '#F5526D', '#FB7D30', '#F56E1C', '#F99D22'];
     const navigate = useNavigate()
     const { login, setLogin } = useContext(LoginContext);
-  const {selectedCategory, setSelectedCategory}= useContext(CategoryContext)
+    const { selectedCategory, setSelectedCategory } = useContext(CategoryContext)
 
 
     useEffect(() => {
@@ -35,7 +36,7 @@ const Navbar = ({ theme, setTheme }) => {
             setLogin(JSON.parse(user))
             setIsLoggedIn(true);
         }
-        if(category){
+        if (category) {
             setSelectedCategory(category)
         }
     }, [])
@@ -71,7 +72,7 @@ const Navbar = ({ theme, setTheme }) => {
                     </button>
                 </div>
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ListItems login={login} isOpen1={isOpen1} setIsOpen1={setIsOpen1} setLogin={setLogin}/>
+                    <ListItems login={login} isOpen1={isOpen1} setIsOpen1={setIsOpen1} setLogin={setLogin} />
                 </div>
             </nav>
 

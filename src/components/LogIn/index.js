@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import { LoginContext } from '../../App';
-import InputField from '../../components/Input';
+import InputField from '../Input';
 
 const LoginPage = ({ loggedIn }) => {
   const [isRightPanelActive, setRightPanelActive] = useState(false);

@@ -6,6 +6,7 @@ import { createContext, useEffect, useState } from 'react';
 import CartLoader from './components/loader';
 import MobileCategory from './pages/mobiles';
 import Groceries from './pages/grocery';
+import { decryptObject, encryptObject } from './functions';
 
 export const LoaderContext = createContext(null);
 export const LoginContext = createContext(null);
@@ -31,10 +32,19 @@ function App() {
     "Toys & Baby Care": "babyCare"
   };
   useEffect(() => {
+    console.log("completeData", completeData)
+
     setTimeout(() => {
       setLoader(!loader)
     }, 4000);
+    
+    const decrypted = decryptObject()
+    console.log("decrypted", decrypted);
   }, [])
+
+  useEffect(() => {
+    encryptObject(completeData)
+  }, [completeData])
 
   return (
     <CompleteContext.Provider value={{ completeData, setCompleteData }}>

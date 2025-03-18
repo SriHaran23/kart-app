@@ -7,7 +7,7 @@ import realmePrices from '../../json/realmePrices.json';
 // import { useData } from '../../context/DataContext';
 import { encryptObject, generateRandomColor } from '../../functions';
 import { Link, useNavigate } from 'react-router-dom'
-import { CategoryContext } from '../../App';
+import { CategoryContext, CompleteContext } from '../../App';
 
 const HomePage = () => {
   const [categories, setCategories] = useState(categoriesData?.categories);
@@ -15,9 +15,9 @@ const HomePage = () => {
   const [mobiles, setMobiles] = useState(realmeModels?.Models);
   const [prices, setPrices] = useState(realmePrices?.realme_models);
   // const { data, setData } = useData() || {};
-  const [isMounted, setIsMounted] = useState(false);
   const navigate = useNavigate()
-  const {selectedCategory, setSelectedCategory}= useContext(CategoryContext)
+  const { selectedCategory, setSelectedCategory } = useContext(CategoryContext)
+  const { completeData, setCompleteData } = useContext(CompleteContext)
   const categoryType = {
     Groceries: "grocery",
     Mobiles: "mobiles",
@@ -32,22 +32,18 @@ const HomePage = () => {
   };
 
   const handleClick = (category, index) => {
+
+    var temp = {...completeData};
+    temp['category'] = category;
+    console.log("temptemptemp",temp)
+    setCompleteData({...completeData,...temp})
     setSelectedCategory(category?.category);
-    localStorage.setItem('mobiles', JSON.stringify(category?.items));
+    // localStorage.setItem('mobiles', JSON.stringify(category?.items));
     localStorage.setItem('category', category?.category);
     console.log('categoryss', category);
     encryptObject(category)
   };
 
-  const handleHoverSelect = (index) => {
-    //   console.log("e", categories[index]?.is_open);
-    //   const updatedCategories = categories.map((category, i) =>
-    //     i === index ? { ...category, is_open: !(category?.is_open) } : category
-    //   );
-    //   setCategories(updatedCategories);
-    //   console.log("r", categories[index]?.is_open);
-    //   setIsOpen(!isOpen);
-  };
   useEffect(() => {
     // Fetch the JSON file
     // fetch(categoriesData) // Ensure the correct path
@@ -55,11 +51,8 @@ const HomePage = () => {
     //   .then((data) => setCategories(data.categories))
     //   .catch((error) => console.error("Error loading categories:", error));
     // console.log("categoriesData", categories);
-    setIsMounted(true);
-
   }, []);
 
-  if (!isMounted) return null; // Prevent hydration mismatch
 
   return (
     <div className='mt-4'>
@@ -96,7 +89,7 @@ const HomePage = () => {
                   ))}
                 </div> */}
                 </li>
-               </Link>
+              </Link>
             ))}
           </ul>
         </div>
@@ -105,8 +98,8 @@ const HomePage = () => {
         {categories.map((category, index) => (
           <div key={index} className="custom-card position-relative mx-3 my-4 pb-3">
             <b className='category-name px-1 text-light' style={{ backgroundColor: generateRandomColor(), }}>{category?.category}</b>
-            <div className="card-body" style={{height:'50px'}}>
-              
+            <div className="card-body" style={{ height: '50px' }}>
+
             </div>
           </div>
         ))}
