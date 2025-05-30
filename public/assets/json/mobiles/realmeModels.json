@@ -1,0 +1,1396 @@
+{
+    "Models": [
+      {
+        "Model": "Realme 1",
+        "Description": "The debut smartphone from Realme, offering a stylish diamond-cut design and powerful performance at an affordable price.",
+        "Highlights": [
+          "Helio P60 processor for smooth multitasking",
+          "Diamond-cut design for a premium look",
+          "AI-powered 13MP rear camera for stunning photos"
+        ],
+        "Specifications": {
+          "General": {
+            "Release Date": "May 2018",
+            "Form Factor": "Touchscreen",
+            "Dimensions": "156.5 x 75.2 x 7.8 mm",
+            "Weight": "155 grams",
+            "Colours": "Diamond Black, Solar Red, Moonlight Silver"
+          },
+          "Display": {
+            "Type": "IPS LCD",
+            "Size": "6.0 inches",
+            "Resolution": "1080 x 2160 pixels",
+            "Aspect Ratio": "18:9"
+          },
+          "Performance": {
+            "Processor": "MediaTek Helio P60",
+            "CPU": "Octa-core (4x2.0 GHz Cortex-A73 & 4x2.0 GHz Cortex-A53)",
+            "GPU": "Mali-G72 MP3",
+            "RAM": "3GB, 4GB, 6GB",
+            "Internal Storage": "32GB, 64GB, 128GB"
+          },
+          "Camera": {
+            "RearCamera": "13MP",
+            "RearCameraFeatures": "LED Flash, HDR, Panorama",
+            "FrontCamera": "8MP",
+            "FrontCameraFeatures": "AI Beauty Mode"
+          },
+          "Battery": {
+            "Capacity": "3410mAh",
+            "Fast Charging": "No"
+          },
+          "Connectivity": {
+            "Wi-Fi": "Yes, Wi-Fi 802.11, ac/b/g/n",
+            "Bluetooth": "Yes, v4.2",
+            "USB": "Yes, microUSB 2.0",
+            "Headphone Jack": "Yes"
+          },
+          "Sensors": {
+            "Face Unlock": "Yes",
+            "Accelerometer": "Yes",
+            "Proximity Sensor": "Yes",
+            "Compass": "Yes"
+          },
+          "Software": {
+            "Operating System": "Android 8.1 (Oreo)",
+            "Skin": "ColorOS 5.2"
+          }
+        }
+      },
+      {
+        "Model": "Realme 2",
+        "Description": "An upgraded budget smartphone with a large display, a dual-camera setup, and long-lasting battery life.",
+        "Highlights": [
+          "Dual-camera system for versatile photography",
+          "4230mAh battery for all-day usage",
+          "Diamond-cut design for a stylish finish"
+        ],
+        "Specifications": {
+          "General": {
+            "Release Date": "September 2018",
+            "Form Factor": "Touchscreen",
+            "Dimensions": "156.2 x 75.6 x 8.2 mm",
+            "Weight": "168 grams",
+            "Colours": "Diamond Black, Diamond Red, Diamond Blue"
+          },
+          "Display": {
+            "Type": "IPS LCD",
+            "Size": "6.2 inches",
+            "Resolution": "720 x 1520 pixels",
+            "Aspect Ratio": "19:9"
+          },
+          "Performance": {
+            "Processor": "Qualcomm Snapdragon 450",
+            "CPU": "Octa-core 1.8 GHz Cortex-A53",
+            "GPU": "Adreno 506",
+            "RAM": "3GB, 4GB",
+            "Internal Storage": "32GB, 64GB"
+          },
+          "Camera": {
+            "RearCamera": "13MP + 2MP",
+            "RearCameraFeatures": "LED Flash, HDR, Panorama",
+            "FrontCamera": "8MP",
+            "FrontCameraFeatures": "AI Beauty Mode"
+          },
+          "Battery": {
+            "Capacity": "4230mAh",
+            "Fast Charging": "No"
+          },
+          "Connectivity": {
+            "Wi-Fi": "Yes, Wi-Fi 802.11, ac/b/g/n",
+            "Bluetooth": "Yes, v4.2",
+            "USB": "Yes, microUSB 2.0",
+            "Headphone Jack": "Yes"
+          },
+          "Sensors": {
+            "Fingerprint Sensor": "Yes, Rear-mounted",
+            "Face Unlock": "Yes",
+            "Accelerometer": "Yes",
+            "Proximity Sensor": "Yes",
+            "Compass": "Yes"
+          },
+          "Software": {
+            "Operating System": "Android 8.1 (Oreo)",
+            "Skin": "ColorOS 5.2"
+          }
+        }
+      },
+      {
+        "Model": "Realme 2 Pro",
+        "Description": "A performance-focused smartphone with a dewdrop notch display, robust hardware, and professional-grade cameras.",
+        "Highlights": [
+          "Dewdrop notch for an immersive display experience",
+          "Snapdragon 660 for top-tier performance",
+          "16MP + 2MP dual-camera setup for detailed photography"
+        ],
+        "Specifications": {
+          "General": {
+            "Release Date": "October 2018",
+            "Form Factor": "Touchscreen",
+            "Dimensions": "156.7 x 74 x 8.5 mm",
+            "Weight": "174 grams",
+            "Colours": "Ice Lake, Blue Ocean, Black Sea"
+          },
+          "Display": {
+            "Type": "IPS LCD",
+            "Size": "6.3 inches",
+            "Resolution": "1080 x 2340 pixels",
+            "Aspect Ratio": "19.5:9"
+          },
+          "Performance": {
+            "Processor": "Qualcomm Snapdragon 660",
+            "CPU": "Octa-core (4x2.2 GHz Kryo 260 & 4x1.8 GHz Kryo 260)",
+            "GPU": "Adreno 512",
+            "RAM": "4GB, 6GB, 8GB",
+            "Internal Storage": "64GB, 128GB"
+          },
+          "Camera": {
+            "RearCamera": "16MP + 2MP",
+            "RearCameraFeatures": "LED Flash, HDR, Panorama",
+            "FrontCamera": "16MP",
+            "FrontCameraFeatures": "HDR"
+          },
+          "Battery": {
+            "Capacity": "3500mAh",
+            "Fast Charging": "Yes, 10W"
+          },
+          "Connectivity": {
+            "Wi-Fi": "Yes, Wi-Fi 802.11, ac/b/g/n",
+            "Bluetooth": "Yes, v5.0",
+            "USB": "Yes, microUSB 2.0",
+            "Headphone Jack": "Yes"
+          },
+          "Sensors": {
+            "Fingerprint Sensor": "Yes, Rear-mounted",
+            "Face Unlock": "Yes",
+            "Accelerometer": "Yes",
+            "Proximity Sensor": "Yes",
+            "Compass": "Yes"
+          },
+          "Software": {
+            "Operating System": "Android 8.1 (Oreo)",
+            "Skin": "ColorOS 5.2"
+          }
+        }
+      },
+      {
+        "Model": "Realme U1",
+        "Description": "A selfie-centric smartphone featuring a high-resolution front camera, powerful performance, and an immersive display.",
+        "Highlights": [
+          "25MP AI-powered selfie camera for stunning portraits",
+          "Helio P70 chipset for efficient multitasking",
+          "Stylish design with vibrant color options"
+        ],
+        "Specifications": {
+          "General": {
+            "Release Date": "November 2018",
+            "Form Factor": "Touchscreen",
+            "Dimensions": "157 x 74 x 8 mm",
+            "Weight": "168 grams",
+            "Colours": "Brave Blue, Fiery Gold, Ambitious Black"
+          },
+          "Display": {
+            "Type": "IPS LCD",
+            "Size": "6.3 inches",
+            "Resolution": "1080 x 2340 pixels",
+            "Aspect Ratio": "19.5:9"
+          },
+          "Performance": {
+            "Processor": "MediaTek Helio P70",
+            "CPU": "Octa-core (4x2.1 GHz Cortex-A73 & 4x2.0 GHz Cortex-A53)",
+            "GPU": "Mali-G72 MP3",
+            "RAM": "3GB, 4GB",
+            "Internal Storage": "32GB, 64GB"
+          },
+          "Camera": {
+            "RearCamera": "13MP + 2MP",
+            "RearCameraFeatures": "LED Flash, HDR, Panorama",
+            "FrontCamera": "25MP",
+            "FrontCameraFeatures": "AI Beauty Mode, HDR"
+          },
+          "Battery": {
+            "Capacity": "3500mAh",
+            "Fast Charging": "No"
+          },
+          "Connectivity": {
+            "Wi-Fi": "Yes, Wi-Fi 802.11, ac/b/g/n",
+            "Bluetooth": "Yes, v4.2",
+            "USB": "Yes, microUSB 2.0",
+            "Headphone Jack": "Yes"
+          },
+          "Sensors": {
+            "Fingerprint Sensor": "Yes, Rear-mounted",
+            "Face Unlock": "Yes",
+            "Accelerometer": "Yes",
+            "Proximity Sensor": "Yes",
+            "Compass": "Yes"
+          },
+          "Software": {
+            "Operating System": "Android 8.1 (Oreo)",
+            "Skin": "ColorOS 5.2"
+          }
+        }
+      },
+      {
+        "Model": "Realme 3",
+        "Description": "An affordable smartphone offering excellent battery life, AI-enhanced cameras, and a smooth performance experience.",
+        "Highlights": [
+          "4230mAh battery for extended usage",
+          "Helio P70 processor for fast performance",
+          "AI dual-camera system for versatile photography"
+        ],
+        "Specifications": {
+          "General": {
+            "Release Date": "March 2019",
+            "Form Factor": "Touchscreen",
+            "Dimensions": "156.1 x 75.6 x 8.3 mm",
+            "Weight": "175 grams",
+            "Colours": "Dynamic Black, Radiant Blue, Classic Black"
+          },
+          "Display": {
+            "Type": "IPS LCD",
+            "Size": "6.2 inches",
+            "Resolution": "720 x 1520 pixels",
+            "Aspect Ratio": "19:9"
+          },
+          "Performance": {
+            "Processor": "MediaTek Helio P70 / P60",
+            "CPU": "Octa-core (4x2.1 GHz Cortex-A73 & 4x2.0 GHz Cortex-A53)",
+            "GPU": "Mali-G72 MP3",
+            "RAM": "3GB, 4GB",
+            "Internal Storage": "32GB, 64GB"
+          },
+          "Camera": {
+            "RearCamera": "13MP + 2MP",
+            "RearCameraFeatures": "LED Flash, HDR, Panorama",
+            "FrontCamera": "13MP",
+            "FrontCameraFeatures": "AI Beauty Mode, HDR"
+          },
+          "Battery": {
+            "Capacity": "4230mAh",
+            "Fast Charging": "No"
+          },
+          "Connectivity": {
+            "Wi-Fi": "Yes, Wi-Fi 802.11, ac/b/g/n",
+            "Bluetooth": "Yes, v4.2",
+            "USB": "Yes, microUSB 2.0",
+            "Headphone Jack": "Yes"
+          },
+          "Sensors": {
+            "Fingerprint Sensor": "Yes, Rear-mounted",
+            "Face Unlock": "Yes",
+            "Accelerometer": "Yes",
+            "Proximity Sensor": "Yes",
+            "Compass": "Yes"
+          },
+          "Software": {
+            "Operating System": "Android 9.0 (Pie)",
+            "Skin": "ColorOS 6"
+          }
+        }
+      },
+      {
+        "Model": "Realme 3 Pro",
+        "Description": "A high-performance device with a powerful processor, excellent cameras, and a vibrant display for an exceptional experience.",
+        "Highlights": [
+          "Snapdragon 710 for flagship-level performance",
+          "25MP AI front camera for crystal-clear selfies",
+          "VOOC 3.0 fast charging for quick power-ups"
+        ],
+        "Specifications": {
+          "General": {
+            "Release Date": "April 2019",
+            "Form Factor": "Touchscreen",
+            "Dimensions": "156.8 x 74.2 x 8.3 mm",
+            "Weight": "172 grams",
+            "Colours": "Carbon Grey, Nitro Blue, Lightning Purple"
+          },
+          "Display": {
+            "Type": "IPS LCD",
+            "Size": "6.3 inches",
+            "Resolution": "1080 x 2340 pixels",
+            "Aspect Ratio": "19.5:9"
+          },
+          "Performance": {
+            "Processor": "Qualcomm Snapdragon 710",
+            "CPU": "Octa-core (2x2.2 GHz Kryo 360 Gold & 6x1.7 GHz Kryo 360 Silver)",
+            "GPU": "Adreno 616",
+            "RAM": "4GB, 6GB",
+            "Internal Storage": "64GB, 128GB"
+          },
+          "Camera": {
+            "RearCamera": "16MP + 5MP",
+            "RearCameraFeatures": "LED Flash, HDR, Panorama",
+            "FrontCamera": "25MP",
+            "FrontCameraFeatures": "HDR, AI Beauty Mode"
+          },
+          "Battery": {
+            "Capacity": "4045mAh",
+            "Fast Charging": "Yes, VOOC 3.0 (20W)"
+          },
+          "Connectivity": {
+            "Wi-Fi": "Yes, Wi-Fi 802.11, ac/b/g/n",
+            "Bluetooth": "Yes, v5.0",
+            "USB": "Yes, microUSB 2.0",
+            "Headphone Jack": "Yes"
+          },
+          "Sensors": {
+            "Fingerprint Sensor": "Yes, Rear-mounted",
+            "Face Unlock": "Yes",
+            "Accelerometer": "Yes",
+            "Proximity Sensor": "Yes",
+            "Compass": "Yes"
+          },
+          "Software": {
+            "Operating System": "Android 9.0 (Pie)",
+            "Skin": "ColorOS 6"
+          }
+        }
+      },
+      {
+        "Model": "Realme 5",
+        "Description": "A budget-friendly smartphone featuring a quad-camera setup, a massive battery, and a modern design.",
+        "Highlights": [
+          "Quad-camera setup for versatile photography",
+          "5000mAh battery for extended usage",
+          "Crystal design with splash resistance"
+        ],
+        "Specifications": {
+          "General": {
+            "Release Date": "August 2019",
+            "Form Factor": "Touchscreen",
+            "Dimensions": "164.4 x 75.6 x 9.3 mm",
+            "Weight": "198 grams",
+            "Colours": "Crystal Blue, Crystal Purple"
+          },
+          "Display": {
+            "Type": "IPS LCD",
+            "Size": "6.5 inches",
+            "Resolution": "720 x 1600 pixels",
+            "Aspect Ratio": "20:9"
+          },
+          "Performance": {
+            "Processor": "Qualcomm Snapdragon 665",
+            "CPU": "Octa-core (4x2.0 GHz Kryo 260 Gold & 4x1.8 GHz Kryo 260 Silver)",
+            "GPU": "Adreno 610",
+            "RAM": "3GB, 4GB",
+            "Internal Storage": "32GB, 64GB, 128GB"
+          },
+          "Camera": {
+            "RearCamera": "12MP + 8MP + 2MP + 2MP",
+            "RearCameraFeatures": "LED Flash, HDR, Panorama",
+            "FrontCamera": "13MP",
+            "FrontCameraFeatures": "HDR, AI Beauty Mode"
+          },
+          "Battery": {
+            "Capacity": "5000mAh",
+            "Fast Charging": "10W"
+          },
+          "Connectivity": {
+            "Wi-Fi": "Yes, Wi-Fi 802.11, ac/b/g/n",
+            "Bluetooth": "Yes, v5.0",
+            "USB": "Yes, microUSB 2.0",
+            "Headphone Jack": "Yes"
+          },
+          "Sensors": {
+            "Fingerprint Sensor": "Yes, Rear-mounted",
+            "Face Unlock": "Yes",
+            "Accelerometer": "Yes",
+            "Proximity Sensor": "Yes",
+            "Compass": "Yes"
+          },
+          "Software": {
+            "Operating System": "Android 9.0 (Pie)",
+            "Skin": "ColorOS 6"
+          }
+        }
+      },
+      {
+        "Model": "Realme 5 Pro",
+        "Description": "A powerful mid-range smartphone with a quad-camera system, VOOC fast charging, and a Snapdragon 712 chipset for seamless performance.",
+        "Highlights": [
+          "48MP quad-camera setup for detailed shots",
+          "VOOC 3.0 fast charging for quick power-ups",
+          "Snapdragon 712 for smooth multitasking"
+        ],
+        "Specifications": {
+          "General": {
+            "Release Date": "September 2019",
+            "Form Factor": "Touchscreen",
+            "Dimensions": "157 x 74.2 x 8.9 mm",
+            "Weight": "184 grams",
+            "Colours": "Crystal Green, Sparkling Blue"
+          },
+          "Display": {
+            "Type": "IPS LCD",
+            "Size": "6.3 inches",
+            "Resolution": "1080 x 2340 pixels",
+            "Aspect Ratio": "19.5:9"
+          },
+          "Performance": {
+            "Processor": "Qualcomm Snapdragon 712",
+            "CPU": "Octa-core (2x2.3 GHz Kryo 360 Gold & 6x1.7 GHz Kryo 360 Silver)",
+            "GPU": "Adreno 616",
+            "RAM": "4GB, 6GB, 8GB",
+            "Internal Storage": "64GB, 128GB"
+          },
+          "Camera": {
+            "RearCamera": "48MP + 8MP + 2MP + 2MP",
+            "RearCameraFeatures": "LED Flash, HDR, Panorama",
+            "FrontCamera": "16MP",
+            "FrontCameraFeatures": "HDR, AI Beauty Mode"
+          },
+          "Battery": {
+            "Capacity": "4035mAh",
+            "Fast Charging": "VOOC 3.0 (20W)"
+          },
+          "Connectivity": {
+            "Wi-Fi": "Yes, Wi-Fi 802.11, ac/b/g/n",
+            "Bluetooth": "Yes, v5.0",
+            "USB": "Yes, USB Type-C",
+            "Headphone Jack": "Yes"
+          },
+          "Sensors": {
+            "Fingerprint Sensor": "Yes, Rear-mounted",
+            "Face Unlock": "Yes",
+            "Accelerometer": "Yes",
+            "Proximity Sensor": "Yes",
+            "Compass": "Yes"
+          },
+          "Software": {
+            "Operating System": "Android 9.0 (Pie)",
+            "Skin": "ColorOS 6"
+          }
+        }
+      },
+      {
+        "Model": "Realme 6i",
+        "Description": "A budget-friendly smartphone with a 90Hz display, powerful Helio G80 processor, and a large battery for a smooth and long-lasting experience.",
+        "Highlights": [
+          "90Hz refresh rate for smoother visuals",
+          "Helio G80 chipset for gaming performance",
+          "5000mAh battery with 18W fast charging"
+        ],
+        "Specifications": {
+          "General": {
+            "Release Date": "March 2020",
+            "Form Factor": "Touchscreen",
+            "Dimensions": "164.4 x 75.4 x 9.0 mm",
+            "Weight": "195 grams",
+            "Colours": "White Milk, Green Tea"
+          },
+          "Display": {
+            "Type": "IPS LCD, 90Hz",
+            "Size": "6.5 inches",
+            "Resolution": "720 x 1600 pixels",
+            "Aspect Ratio": "20:9"
+          },
+          "Performance": {
+            "Processor": "MediaTek Helio G80",
+            "CPU": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)",
+            "GPU": "Mali-G52 MC2",
+            "RAM": "3GB, 4GB",
+            "Internal Storage": "64GB, 128GB"
+          },
+          "Camera": {
+            "RearCamera": "48MP + 8MP + 2MP + 2MP",
+            "RearCameraFeatures": "LED Flash, HDR, Panorama",
+            "FrontCamera": "16MP",
+            "FrontCameraFeatures": "HDR, AI Beauty Mode"
+          },
+          "Battery": {
+            "Capacity": "5000mAh",
+            "Fast Charging": "18W"
+          },
+          "Connectivity": {
+            "Wi-Fi": "Yes, Wi-Fi 802.11, ac/b/g/n",
+            "Bluetooth": "Yes, v5.0",
+            "USB": "Yes, USB Type-C",
+            "Headphone Jack": "Yes"
+          },
+          "Sensors": {
+            "Fingerprint Sensor": "Yes, Rear-mounted",
+            "Face Unlock": "Yes",
+            "Accelerometer": "Yes",
+            "Proximity Sensor": "Yes",
+            "Compass": "Yes"
+          },
+          "Software": {
+            "Operating System": "Android 10",
+            "Skin": "Realme UI 1.0"
+          }
+        }
+      },
+      {
+        "Model": "Realme 6",
+        "Description": "A mid-range smartphone with a 90Hz FHD+ display, versatile cameras, and a powerful gaming chipset.",
+        "Highlights": [
+          "90Hz FHD+ display for smooth visuals",
+          "Helio G90T processor for gaming enthusiasts",
+          "30W fast charging for quick battery refill"
+        ],
+        "Specifications": {
+          "General": {
+            "Release Date": "March 2020",
+            "Form Factor": "Touchscreen",
+            "Dimensions": "162.1 x 74.8 x 8.9 mm",
+            "Weight": "191 grams",
+            "Colours": "Comet Blue, Comet White"
+          },
+          "Display": {
+            "Type": "IPS LCD, 90Hz",
+            "Size": "6.5 inches",
+            "Resolution": "1080 x 2400 pixels",
+            "Aspect Ratio": "20:9"
+          },
+          "Performance": {
+            "Processor": "MediaTek Helio G90T",
+            "CPU": "Octa-core (2x2.05 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)",
+            "GPU": "Mali-G76 MC4",
+            "RAM": "4GB, 6GB, 8GB",
+            "Internal Storage": "64GB, 128GB"
+          },
+          "Camera": {
+            "RearCamera": "64MP + 8MP + 2MP + 2MP",
+            "RearCameraFeatures": "LED Flash, HDR, Panorama",
+            "FrontCamera": "16MP",
+            "FrontCameraFeatures": "HDR, AI Beauty Mode"
+          },
+          "Battery": {
+            "Capacity": "4300mAh",
+            "Fast Charging": "30W"
+          },
+          "Connectivity": {
+            "Wi-Fi": "Yes, Wi-Fi 802.11, ac/b/g/n",
+            "Bluetooth": "Yes, v5.0",
+            "USB": "Yes, USB Type-C",
+            "Headphone Jack": "Yes"
+          },
+          "Sensors": {
+            "Fingerprint Sensor": "Yes, Side-mounted",
+            "Face Unlock": "Yes",
+            "Accelerometer": "Yes",
+            "Proximity Sensor": "Yes",
+            "Compass": "Yes"
+          },
+          "Software": {
+            "Operating System": "Android 10",
+            "Skin": "Realme UI 1.0"
+          }
+        }
+      },
+      {
+        "Model": "Realme 6 Pro",
+        "Description": "A premium mid-range smartphone offering dual selfie cameras, 90Hz display, and a Snapdragon 720G chipset for performance and gaming.",
+        "Highlights": [
+          "90Hz display for ultra-smooth visuals",
+          "Snapdragon 720G for superior performance",
+          "Dual in-display selfie cameras for stunning portraits"
+        ],
+        "Specifications": {
+          "General": {
+            "Release Date": "March 2020",
+            "Form Factor": "Touchscreen",
+            "Dimensions": "163.8 x 75.8 x 8.9 mm",
+            "Weight": "202 grams",
+            "Colours": "Lightning Blue, Lightning Orange"
+          },
+          "Display": {
+            "Type": "IPS LCD, 90Hz",
+            "Size": "6.6 inches",
+            "Resolution": "1080 x 2400 pixels",
+            "Aspect Ratio": "20:9"
+          },
+          "Performance": {
+            "Processor": "Qualcomm Snapdragon 720G",
+            "CPU": "Octa-core (2x2.3 GHz Kryo 465 Gold & 6x1.8 GHz Kryo 465 Silver)",
+            "GPU": "Adreno 618",
+            "RAM": "6GB, 8GB",
+            "Internal Storage": "64GB, 128GB"
+          },
+          "Camera": {
+            "RearCamera": "64MP + 12MP + 8MP + 2MP",
+            "RearCameraFeatures": "LED Flash, HDR, Panorama",
+            "FrontCamera": "16MP + 8MP",
+            "FrontCameraFeatures": "HDR, Wide-angle"
+          },
+          "Battery": {
+            "Capacity": "4300mAh",
+            "Fast Charging": "30W"
+          },
+          "Connectivity": {
+            "Wi-Fi": "Yes, Wi-Fi 802.11, ac/b/g/n",
+            "Bluetooth": "Yes, v5.1",
+            "USB": "Yes, USB Type-C",
+            "Headphone Jack": "Yes"
+          },
+          "Sensors": {
+            "Fingerprint Sensor": "Yes, Side-mounted",
+            "Face Unlock": "Yes",
+            "Accelerometer": "Yes",
+            "Proximity Sensor": "Yes",
+            "Compass": "Yes"
+          },
+          "Software": {
+            "Operating System": "Android 10",
+            "Skin": "Realme UI 1.0"
+          }
+        }
+      },
+      {
+        "Model": "Realme 7i",
+        "Description": "A stylish smartphone with a high-refresh-rate display, versatile quad-camera setup, and a massive battery for long-lasting performance.",
+        "Highlights": [
+          "90Hz refresh rate for smooth visuals",
+          "64MP quad-camera for versatile photography",
+          "5000mAh battery with 18W fast charging"
+        ],
+        "Specifications": {
+          "General": {
+            "Release Date": "September 2020",
+            "Form Factor": "Touchscreen",
+            "Dimensions": "164.1 x 75.5 x 8.9 mm",
+            "Weight": "188 grams",
+            "Colours": "Aurora Green, Polar Blue"
+          },
+          "Display": {
+            "Type": "IPS LCD, 90Hz",
+            "Size": "6.5 inches",
+            "Resolution": "720 x 1600 pixels",
+            "Aspect Ratio": "20:9"
+          },
+          "Performance": {
+            "Processor": "Qualcomm Snapdragon 662",
+            "CPU": "Octa-core (4x2.0 GHz Kryo 260 Gold & 4x1.8 GHz Kryo 260 Silver)",
+            "GPU": "Adreno 610",
+            "RAM": "4GB, 6GB",
+            "Internal Storage": "64GB, 128GB"
+          },
+          "Camera": {
+            "RearCamera": "64MP + 8MP + 2MP + 2MP",
+            "RearCameraFeatures": "LED Flash, HDR, Panorama",
+            "FrontCamera": "16MP",
+            "FrontCameraFeatures": "HDR, AI Beauty Mode"
+          },
+          "Battery": {
+            "Capacity": "5000mAh",
+            "Fast Charging": "18W"
+          },
+          "Connectivity": {
+            "Wi-Fi": "Yes, Wi-Fi 802.11, ac/b/g/n",
+            "Bluetooth": "Yes, v5.0",
+            "USB": "Yes, USB Type-C",
+            "Headphone Jack": "Yes"
+          },
+          "Sensors": {
+            "Fingerprint Sensor": "Yes, Rear-mounted",
+            "Face Unlock": "Yes",
+            "Accelerometer": "Yes",
+            "Proximity Sensor": "Yes",
+            "Compass": "Yes"
+          },
+          "Software": {
+            "Operating System": "Android 10",
+            "Skin": "Realme UI"
+          }
+        }
+      },
+      {
+        "Model": "Realme 7",
+        "Description": "A feature-packed smartphone with a gaming-optimized chipset, 90Hz display, and fast-charging support.",
+        "Highlights": [
+          "90Hz FHD+ display for ultra-smooth experience",
+          "MediaTek Helio G95 processor for gaming enthusiasts",
+          "5000mAh battery with 30W Dart Charging"
+        ],
+        "Specifications": {
+          "General": {
+            "Release Date": "September 2020",
+            "Form Factor": "Touchscreen",
+            "Dimensions": "162.3 x 75.4 x 9.4 mm",
+            "Weight": "196.5 grams",
+            "Colours": "Mist White, Mist Blue"
+          },
+          "Display": {
+            "Type": "IPS LCD, 90Hz",
+            "Size": "6.5 inches",
+            "Resolution": "1080 x 2400 pixels",
+            "Aspect Ratio": "20:9"
+          },
+          "Performance": {
+            "Processor": "MediaTek Helio G95",
+            "CPU": "Octa-core (2x2.05 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)",
+            "GPU": "Mali-G76 MC4",
+            "RAM": "6GB, 8GB",
+            "Internal Storage": "64GB, 128GB"
+          },
+          "Camera": {
+            "RearCamera": "64MP + 8MP + 2MP + 2MP",
+            "RearCameraFeatures": "LED Flash, HDR, Panorama",
+            "FrontCamera": "16MP",
+            "FrontCameraFeatures": "HDR, AI Beauty Mode"
+          },
+          "Battery": {
+            "Capacity": "5000mAh",
+            "Fast Charging": "30W"
+          },
+          "Connectivity": {
+            "Wi-Fi": "Yes, Wi-Fi 802.11, ac/b/g/n",
+            "Bluetooth": "Yes, v5.0",
+            "USB": "Yes, USB Type-C",
+            "Headphone Jack": "Yes"
+          },
+          "Sensors": {
+            "Fingerprint Sensor": "Yes, Side-mounted",
+            "Face Unlock": "Yes",
+            "Accelerometer": "Yes",
+            "Proximity Sensor": "Yes",
+            "Compass": "Yes"
+          },
+          "Software": {
+            "Operating System": "Android 10",
+            "Skin": "Realme UI"
+          }
+        }
+      },
+      {
+        "Model": "Realme 7 Pro",
+        "Description": "A premium mid-range smartphone with an AMOLED display, 65W SuperDart charging, and a Snapdragon 720G processor.",
+        "Highlights": [
+          "AMOLED display for vibrant visuals",
+          "Snapdragon 720G chipset for smooth performance",
+          "65W SuperDart charging for super-fast power-up"
+        ],
+        "Specifications": {
+          "General": {
+            "Release Date": "September 2020",
+            "Form Factor": "Touchscreen",
+            "Dimensions": "160.9 x 74.3 x 8.7 mm",
+            "Weight": "182 grams",
+            "Colours": "Mirror Blue, Mirror Silver"
+          },
+          "Display": {
+            "Type": "Super AMOLED",
+            "Size": "6.4 inches",
+            "Resolution": "1080 x 2400 pixels",
+            "Aspect Ratio": "20:9"
+          },
+          "Performance": {
+            "Processor": "Qualcomm Snapdragon 720G",
+            "CPU": "Octa-core (2x2.3 GHz Kryo 465 Gold & 6x1.8 GHz Kryo 465 Silver)",
+            "GPU": "Adreno 618",
+            "RAM": "6GB, 8GB",
+            "Internal Storage": "128GB"
+          },
+          "Camera": {
+            "RearCamera": "64MP + 8MP + 2MP + 2MP",
+            "RearCameraFeatures": "LED Flash, HDR, Panorama",
+            "FrontCamera": "32MP",
+            "FrontCameraFeatures": "HDR, AI Beauty Mode"
+          },
+          "Battery": {
+            "Capacity": "4500mAh",
+            "Fast Charging": "65W SuperDart"
+          },
+          "Connectivity": {
+            "Wi-Fi": "Yes, Wi-Fi 802.11, ac/b/g/n",
+            "Bluetooth": "Yes, v5.1",
+            "USB": "Yes, USB Type-C",
+            "Headphone Jack": "Yes"
+          },
+          "Sensors": {
+            "Fingerprint Sensor": "Yes, In-display",
+            "Face Unlock": "Yes",
+            "Accelerometer": "Yes",
+            "Proximity Sensor": "Yes",
+            "Compass": "Yes"
+          },
+          "Software": {
+            "Operating System": "Android 10",
+            "Skin": "Realme UI"
+          }
+        }
+      },
+      {
+        "Model": "Realme 8i",
+        "Description": "A powerful budget smartphone with a 120Hz display, Helio G96 processor, and a massive battery.",
+        "Highlights": [
+          "120Hz refresh rate for smooth visuals",
+          "Helio G96 processor for efficient performance",
+          "5000mAh battery with 18W fast charging"
+        ],
+        "Specifications": {
+          "General": {
+            "Release Date": "September 2021",
+            "Form Factor": "Touchscreen",
+            "Dimensions": "164.1 x 75.5 x 8.5 mm",
+            "Weight": "194 grams",
+            "Colours": "Space Black, Space Purple"
+          },
+          "Display": {
+            "Type": "IPS LCD, 120Hz",
+            "Size": "6.6 inches",
+            "Resolution": "1080 x 2412 pixels",
+            "Aspect Ratio": "20:9"
+          },
+          "Performance": {
+            "Processor": "MediaTek Helio G96",
+            "CPU": "Octa-core (2x2.05 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)",
+            "GPU": "Mali-G57 MC2",
+            "RAM": "4GB, 6GB",
+            "Internal Storage": "64GB, 128GB"
+          },
+          "Camera": {
+            "RearCamera": "50MP + 2MP + 2MP",
+            "RearCameraFeatures": "LED Flash, HDR, Panorama",
+            "FrontCamera": "16MP",
+            "FrontCameraFeatures": "HDR, AI Beauty Mode"
+          },
+          "Battery": {
+            "Capacity": "5000mAh",
+            "Fast Charging": "18W"
+          },
+          "Connectivity": {
+            "Wi-Fi": "Yes, Wi-Fi 802.11, ac/b/g/n",
+            "Bluetooth": "Yes, v5.1",
+            "USB": "Yes, USB Type-C",
+            "Headphone Jack": "Yes"
+          },
+          "Sensors": {
+            "Fingerprint Sensor": "Yes, Side-mounted",
+            "Face Unlock": "Yes",
+            "Accelerometer": "Yes",
+            "Proximity Sensor": "Yes",
+            "Compass": "Yes"
+          },
+          "Software": {
+            "Operating System": "Android 11",
+            "Skin": "Realme UI 2.0"
+          }
+        }
+      },
+      {
+        "Model": "Realme 8",
+        "Description": "A sleek mid-range smartphone with an AMOLED display, Helio G95 processor, and advanced camera features.",
+        "Highlights": [
+          "Super AMOLED display for vibrant visuals",
+          "Helio G95 chipset optimized for gaming",
+          "30W Dart Charging for fast power-up"
+        ],
+        "Specifications": {
+          "General": {
+            "Release Date": "March 2021",
+            "Form Factor": "Touchscreen",
+            "Dimensions": "160.6 x 73.9 x 8 mm",
+            "Weight": "177 grams",
+            "Colours": "Cyber Silver, Cyber Black"
+          },
+          "Display": {
+            "Type": "Super AMOLED",
+            "Size": "6.4 inches",
+            "Resolution": "1080 x 2400 pixels",
+            "Aspect Ratio": "20:9"
+          },
+          "Performance": {
+            "Processor": "MediaTek Helio G95",
+            "CPU": "Octa-core (2x2.05 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)",
+            "GPU": "Mali-G76 MC4",
+            "RAM": "4GB, 6GB, 8GB",
+            "Internal Storage": "64GB, 128GB"
+          },
+          "Camera": {
+            "RearCamera": "64MP + 8MP + 2MP + 2MP",
+            "RearCameraFeatures": "LED Flash, HDR, Panorama",
+            "FrontCamera": "16MP",
+            "FrontCameraFeatures": "HDR, AI Beauty Mode"
+          },
+          "Battery": {
+            "Capacity": "5000mAh",
+            "Fast Charging": "30W"
+          },
+          "Connectivity": {
+            "Wi-Fi": "Yes, Wi-Fi 802.11, ac/b/g/n",
+            "Bluetooth": "Yes, v5.1",
+            "USB": "Yes, USB Type-C",
+            "Headphone Jack": "Yes"
+          },
+          "Sensors": {
+            "Fingerprint Sensor": "Yes, In-display",
+            "Face Unlock": "Yes",
+            "Accelerometer": "Yes",
+            "Proximity Sensor": "Yes",
+            "Compass": "Yes"
+          },
+          "Software": {
+            "Operating System": "Android 11",
+            "Skin": "Realme UI 2.0"
+          }
+        }
+      },
+      {
+        "Model": "Realme 8s",
+        "Description": "A powerful 5G-ready smartphone with a Dimensity 810 processor, smooth 90Hz display, and large battery.",
+        "Highlights": [
+          "Dimensity 810 5G chipset for fast connectivity",
+          "90Hz refresh rate for smooth performance",
+          "33W Dart Charging for quick battery refill"
+        ],
+        "Specifications": {
+          "General": {
+            "Release Date": "September 2021",
+            "Form Factor": "Touchscreen",
+            "Dimensions": "162.5 x 74.8 x 8.8 mm",
+            "Weight": "191 grams",
+            "Colours": "Universe Blue, Universe Purple"
+          },
+          "Display": {
+            "Type": "IPS LCD, 90Hz",
+            "Size": "6.5 inches",
+            "Resolution": "1080 x 2400 pixels",
+            "Aspect Ratio": "20:9"
+          },
+          "Performance": {
+            "Processor": "MediaTek Dimensity 810",
+            "CPU": "Octa-core (2x2.4 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)",
+            "GPU": "Mali-G57 MC2",
+            "RAM": "6GB, 8GB",
+            "Internal Storage": "128GB"
+          },
+          "Camera": {
+            "RearCamera": "64MP + 2MP + 2MP",
+            "RearCameraFeatures": "LED Flash, HDR, Panorama",
+            "FrontCamera": "16MP",
+            "FrontCameraFeatures": "HDR, AI Beauty Mode"
+          },
+          "Battery": {
+            "Capacity": "5000mAh",
+            "Fast Charging": "33W"
+          },
+          "Connectivity": {
+            "Wi-Fi": "Yes, Wi-Fi 802.11, ac/b/g/n",
+            "Bluetooth": "Yes, v5.1",
+            "USB": "Yes, USB Type-C",
+            "Headphone Jack": "Yes"
+          },
+          "Sensors": {
+            "Fingerprint Sensor": "Yes, Side-mounted",
+            "Face Unlock": "Yes",
+            "Accelerometer": "Yes",
+            "Proximity Sensor": "Yes",
+            "Compass": "Yes"
+          },
+          "Software": {
+            "Operating System": "Android 11",
+            "Skin": "Realme UI 2.0"
+          }
+        }
+      },
+      {
+        "Model": "Realme 8 Pro",
+        "Description": "A photography-focused smartphone with a 108MP camera, AMOLED display, and fast charging.",
+        "Highlights": [
+          "108MP primary camera for high-resolution photography",
+          "Super AMOLED display for vivid visuals",
+          "50W SuperDart Charging for quick battery power-up"
+        ],
+        "Specifications": {
+          "General": {
+            "Release Date": "March 2021",
+            "Form Factor": "Touchscreen",
+            "Dimensions": "160.6 x 73.9 x 8.1 mm",
+            "Weight": "176 grams",
+            "Colours": "Infinite Blue, Infinite Black, Illuminating Yellow"
+          },
+          "Display": {
+            "Type": "Super AMOLED",
+            "Size": "6.4 inches",
+            "Resolution": "1080 x 2400 pixels",
+            "Aspect Ratio": "20:9"
+          },
+          "Performance": {
+            "Processor": "Qualcomm Snapdragon 720G",
+            "CPU": "Octa-core (2x2.3 GHz Kryo 465 Gold & 6x1.8 GHz Kryo 465 Silver)",
+            "GPU": "Adreno 618",
+            "RAM": "6GB, 8GB",
+            "Internal Storage": "128GB"
+          },
+          "Camera": {
+            "RearCamera": "108MP + 8MP + 2MP + 2MP",
+            "RearCameraFeatures": "LED Flash, HDR, Panorama",
+            "FrontCamera": "16MP",
+            "FrontCameraFeatures": "HDR, AI Beauty Mode"
+          },
+          "Battery": {
+            "Capacity": "4500mAh",
+            "Fast Charging": "50W"
+          },
+          "Connectivity": {
+            "Wi-Fi": "Yes, Wi-Fi 802.11, ac/b/g/n",
+            "Bluetooth": "Yes, v5.0",
+            "USB": "Yes, USB Type-C",
+            "Headphone Jack": "Yes"
+          },
+          "Sensors": {
+            "Fingerprint Sensor": "Yes, In-display",
+            "Face Unlock": "Yes",
+            "Accelerometer": "Yes",
+            "Proximity Sensor": "Yes",
+            "Compass": "Yes"
+          },
+          "Software": {
+            "Operating System": "Android 11",
+            "Skin": "Realme UI 2.0"
+          }
+        }
+      },
+      {
+        "Model": "Realme 9i",
+        "Description": "A budget-friendly smartphone with a high-refresh-rate display, efficient Snapdragon processor, and fast charging support.",
+        "Highlights": [
+          "90Hz display for smooth visuals",
+          "Snapdragon 680 chipset for efficient performance",
+          "33W fast charging for quick power-up"
+        ],
+        "Specifications": {
+          "General": {
+            "Release Date": "January 2022",
+            "Form Factor": "Touchscreen",
+            "Dimensions": "164.4 x 75.7 x 8.4 mm",
+            "Weight": "190 grams",
+            "Colours": "Prism Blue, Prism Black"
+          },
+          "Display": {
+            "Type": "IPS LCD, 90Hz",
+            "Size": "6.6 inches",
+            "Resolution": "1080 x 2412 pixels",
+            "Aspect Ratio": "20:9"
+          },
+          "Performance": {
+            "Processor": "Qualcomm Snapdragon 680",
+            "CPU": "Octa-core (4x2.4 GHz Kryo 265 Gold & 4x1.9 GHz Kryo 265 Silver)",
+            "GPU": "Adreno 610",
+            "RAM": "4GB, 6GB",
+            "Internal Storage": "64GB, 128GB"
+          },
+          "Camera": {
+            "RearCamera": "50MP + 2MP + 2MP",
+            "RearCameraFeatures": "LED Flash, HDR, Panorama",
+            "FrontCamera": "16MP",
+            "FrontCameraFeatures": "HDR, AI Beauty Mode"
+          },
+          "Battery": {
+            "Capacity": "5000mAh",
+            "Fast Charging": "33W"
+          },
+          "Connectivity": {
+            "Wi-Fi": "Yes, Wi-Fi 802.11, ac/b/g/n",
+            "Bluetooth": "Yes, v5.0",
+            "USB": "Yes, USB Type-C",
+            "Headphone Jack": "Yes"
+          },
+          "Sensors": {
+            "Fingerprint Sensor": "Yes, Side-mounted",
+            "Face Unlock": "Yes",
+            "Accelerometer": "Yes",
+            "Proximity Sensor": "Yes",
+            "Compass": "Yes"
+          },
+          "Software": {
+            "Operating System": "Android 11",
+            "Skin": "Realme UI 2.0"
+          }
+        }
+      },
+      {
+        "Model": "Realme 9 4G",
+        "Description": "A stylish mid-range smartphone with an AMOLED display, Snapdragon chipset, and advanced photography features.",
+        "Highlights": [
+          "AMOLED display for vibrant colors",
+          "Snapdragon 680 chipset for smooth performance",
+          "108MP triple-camera for high-quality photos"
+        ],
+        "Specifications": {
+          "General": {
+            "Release Date": "April 2022",
+            "Form Factor": "Touchscreen",
+            "Dimensions": "160.2 x 73.3 x 8 mm",
+            "Weight": "178 grams",
+            "Colours": "Sunburst Gold, Stargaze White, Meteor Black"
+          },
+          "Display": {
+            "Type": "Super AMOLED, 90Hz",
+            "Size": "6.4 inches",
+            "Resolution": "1080 x 2400 pixels",
+            "Aspect Ratio": "20:9"
+          },
+          "Performance": {
+            "Processor": "Qualcomm Snapdragon 680",
+            "CPU": "Octa-core (4x2.4 GHz Kryo 265 Gold & 4x1.9 GHz Kryo 265 Silver)",
+            "GPU": "Adreno 610",
+            "RAM": "6GB, 8GB",
+            "Internal Storage": "128GB"
+          },
+          "Camera": {
+            "RearCamera": "108MP + 8MP + 2MP",
+            "RearCameraFeatures": "LED Flash, HDR, Panorama",
+            "FrontCamera": "16MP",
+            "FrontCameraFeatures": "HDR, AI Beauty Mode"
+          },
+          "Battery": {
+            "Capacity": "5000mAh",
+            "Fast Charging": "33W"
+          },
+          "Connectivity": {
+            "Wi-Fi": "Yes, Wi-Fi 802.11, ac/b/g/n",
+            "Bluetooth": "Yes, v5.1",
+            "USB": "Yes, USB Type-C",
+            "Headphone Jack": "Yes"
+          },
+          "Sensors": {
+            "Fingerprint Sensor": "Yes, In-display",
+            "Face Unlock": "Yes",
+            "Accelerometer": "Yes",
+            "Proximity Sensor": "Yes",
+            "Compass": "Yes"
+          },
+          "Software": {
+            "Operating System": "Android 12",
+            "Skin": "Realme UI 3.0"
+          }
+        }
+      },
+      {
+        "Model": "Realme 9 5G",
+        "Description": "A 5G-enabled smartphone with a smooth display, Dimensity chipset, and long-lasting battery life.",
+        "Highlights": [
+          "Dimensity 810 chipset for seamless 5G connectivity",
+          "120Hz display for fluid scrolling",
+          "5000mAh battery with 18W fast charging"
+        ],
+        "Specifications": {
+          "General": {
+            "Release Date": "March 2022",
+            "Form Factor": "Touchscreen",
+            "Dimensions": "164.3 x 75.6 x 8.5 mm",
+            "Weight": "188 grams",
+            "Colours": "Meteor Black, Stargaze White"
+          },
+          "Display": {
+            "Type": "IPS LCD, 120Hz",
+            "Size": "6.6 inches",
+            "Resolution": "1080 x 2412 pixels",
+            "Aspect Ratio": "20:9"
+          },
+          "Performance": {
+            "Processor": "MediaTek Dimensity 810",
+            "CPU": "Octa-core (2x2.4 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)",
+            "GPU": "Mali-G57 MC2",
+            "RAM": "4GB, 6GB",
+            "Internal Storage": "64GB, 128GB"
+          },
+          "Camera": {
+            "RearCamera": "50MP + 2MP + 2MP",
+            "RearCameraFeatures": "LED Flash, HDR, Panorama",
+            "FrontCamera": "16MP",
+            "FrontCameraFeatures": "HDR, AI Beauty Mode"
+          },
+          "Battery": {
+            "Capacity": "5000mAh",
+            "Fast Charging": "18W"
+          },
+          "Connectivity": {
+            "Wi-Fi": "Yes, Wi-Fi 802.11, ac/b/g/n",
+            "Bluetooth": "Yes, v5.1",
+            "USB": "Yes, USB Type-C",
+            "Headphone Jack": "Yes"
+          },
+          "Sensors": {
+            "Fingerprint Sensor": "Yes, Side-mounted",
+            "Face Unlock": "Yes",
+            "Accelerometer": "Yes",
+            "Proximity Sensor": "Yes",
+            "Compass": "Yes"
+          },
+          "Software": {
+            "Operating System": "Android 11",
+            "Skin": "Realme UI 2.0"
+          }
+        }
+      },
+      {
+        "Model": "Realme 9 SE",
+        "Description": "A performance-focused smartphone with a 144Hz display and Snapdragon 778G for seamless gaming and multitasking.",
+        "Highlights": [
+          "144Hz Ultra Smooth Display",
+          "Snapdragon 778G chipset for powerful performance",
+          "5000mAh battery with 30W fast charging"
+        ],
+        "Specifications": {
+          "General": {
+            "Release Date": "March 2022",
+            "Form Factor": "Touchscreen",
+            "Dimensions": "164.4 x 75.8 x 8.5 mm",
+            "Weight": "199 grams",
+            "Colours": "Starry Glow, Azure Glow"
+          },
+          "Display": {
+            "Type": "IPS LCD, 144Hz",
+            "Size": "6.6 inches",
+            "Resolution": "1080 x 2412 pixels",
+            "Aspect Ratio": "20:9"
+          },
+          "Performance": {
+            "Processor": "Qualcomm Snapdragon 778G",
+            "CPU": "Octa-core (4x2.4 GHz Kryo 670 & 4x1.8 GHz Kryo 670)",
+            "GPU": "Adreno 642L",
+            "RAM": "6GB, 8GB",
+            "Internal Storage": "128GB"
+          },
+          "Camera": {
+            "RearCamera": "48MP + 2MP + 2MP",
+            "RearCameraFeatures": "LED Flash, HDR, Panorama",
+            "FrontCamera": "16MP",
+            "FrontCameraFeatures": "HDR, AI Beauty Mode"
+          },
+          "Battery": {
+            "Capacity": "5000mAh",
+            "Fast Charging": "30W"
+          },
+          "Connectivity": {
+            "Wi-Fi": "Yes, Wi-Fi 802.11, ac/b/g/n",
+            "Bluetooth": "Yes, v5.1",
+            "USB": "Yes, USB Type-C",
+            "Headphone Jack": "Yes"
+          },
+          "Sensors": {
+            "Fingerprint Sensor": "Yes, Side-mounted",
+            "Face Unlock": "Yes",
+            "Accelerometer": "Yes",
+            "Proximity Sensor": "Yes",
+            "Compass": "Yes"
+          },
+          "Software": {
+            "Operating System": "Android 11",
+            "Skin": "Realme UI 2.0"
+          }
+        }
+      },
+      {
+        "Model": "Realme 9 Pro 5G",
+        "Description": "A stylish mid-range 5G smartphone with a 120Hz display and Snapdragon 695 for balanced performance.",
+        "Highlights": [
+          "120Hz display for smooth scrolling",
+          "Snapdragon 695 chipset with 5G support",
+          "5000mAh battery with 33W fast charging"
+        ],
+        "Specifications": {
+          "General": {
+            "Release Date": "February 2022",
+            "Form Factor": "Touchscreen",
+            "Dimensions": "164.3 x 75.6 x 8.5 mm",
+            "Weight": "195 grams",
+            "Colours": "Aurora Green, Sunrise Blue, Midnight Black"
+          },
+          "Display": {
+            "Type": "IPS LCD, 120Hz",
+            "Size": "6.6 inches",
+            "Resolution": "1080 x 2412 pixels",
+            "Aspect Ratio": "20:9"
+          },
+          "Performance": {
+            "Processor": "Qualcomm Snapdragon 695",
+            "CPU": "Octa-core (2x2.2 GHz Kryo 660 Gold & 6x1.7 GHz Kryo 660 Silver)",
+            "GPU": "Adreno 619",
+            "RAM": "6GB, 8GB",
+            "Internal Storage": "128GB"
+          },
+          "Camera": {
+            "RearCamera": "64MP + 8MP + 2MP",
+            "RearCameraFeatures": "LED Flash, HDR, Panorama",
+            "FrontCamera": "16MP",
+            "FrontCameraFeatures": "HDR, AI Beauty Mode"
+          },
+          "Battery": {
+            "Capacity": "5000mAh",
+            "Fast Charging": "33W"
+          },
+          "Connectivity": {
+            "Wi-Fi": "Yes, Wi-Fi 802.11, ac/b/g/n",
+            "Bluetooth": "Yes, v5.1",
+            "USB": "Yes, USB Type-C",
+            "Headphone Jack": "Yes"
+          },
+          "Sensors": {
+            "Fingerprint Sensor": "Yes, Side-mounted",
+            "Face Unlock": "Yes",
+            "Accelerometer": "Yes",
+            "Proximity Sensor": "Yes",
+            "Compass": "Yes"
+          },
+          "Software": {
+            "Operating System": "Android 11",
+            "Skin": "Realme UI 2.0"
+          }
+        }
+      },
+      {
+        "Model": "Realme 9 Pro+ 5G",
+        "Description": "A premium mid-range smartphone with an AMOLED display, Dimensity 920 processor, and flagship-level camera features.",
+        "Highlights": [
+          "Super AMOLED display with 90Hz refresh rate",
+          "Dimensity 920 chipset for smooth and efficient performance",
+          "50MP Sony IMX766 sensor with OIS for superior photography"
+        ],
+        "Specifications": {
+          "General": {
+            "Release Date": "February 2022",
+            "Form Factor": "Touchscreen",
+            "Dimensions": "160.2 x 73.3 x 7.99 mm",
+            "Weight": "182 grams",
+            "Colours": "Aurora Green, Sunrise Blue, Midnight Black"
+          },
+          "Display": {
+            "Type": "Super AMOLED, 90Hz",
+            "Size": "6.4 inches",
+            "Resolution": "1080 x 2400 pixels",
+            "Aspect Ratio": "20:9"
+          },
+          "Performance": {
+            "Processor": "MediaTek Dimensity 920",
+            "CPU": "Octa-core (2x2.5 GHz Cortex-A78 & 6x2.0 GHz Cortex-A55)",
+            "GPU": "Mali-G68 MC4",
+            "RAM": "6GB, 8GB",
+            "Internal Storage": "128GB, 256GB"
+          },
+          "Camera": {
+            "RearCamera": "50MP + 8MP + 2MP",
+            "RearCameraFeatures": "OIS, LED Flash, HDR, Panorama",
+            "FrontCamera": "16MP",
+            "FrontCameraFeatures": "HDR, AI Beauty Mode"
+          },
+          "Battery": {
+            "Capacity": "4500mAh",
+            "Fast Charging": "60W"
+          },
+          "Connectivity": {
+            "Wi-Fi": "Yes, Wi-Fi 802.11, ac/b/g/n",
+            "Bluetooth": "Yes, v5.2",
+            "USB": "Yes, USB Type-C",
+            "Headphone Jack": "Yes"
+          },
+          "Sensors": {
+            "Fingerprint Sensor": "Yes, In-display",
+            "Face Unlock": "Yes",
+            "Accelerometer": "Yes",
+            "Proximity Sensor": "Yes",
+            "Compass": "Yes"
+          },
+          "Software": {
+            "Operating System": "Android 12",
+            "Skin": "Realme UI 3.0"
+          }
+        }
+      }
+    ]
+  }
+  

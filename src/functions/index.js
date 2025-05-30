@@ -1,5 +1,6 @@
 import axios from "axios";
-
+import { toast } from "react-toastify";
+// import data from '../json/realmeModels.json'
 export const generateRandomColor = () => {
     const letters = '0123456789ABCDE';
     let color = '#';
@@ -11,20 +12,26 @@ export const generateRandomColor = () => {
 
 export const getMobiles = async (brand) => {
     try {
-        const response = await fetch(`/json/mobiles/${brand}.json`);
-        console.log("responseresponse", response);
-        if (!response.ok) throw new Error("Failed to load JSON");
+        const response = await fetch(`/assets/json/mobiles/${brand}Models.json`);
+console.log("response",response);
+
+        if (!response.ok) {
+            throw new Error(`Failed to load JSON: ${response.status} ${response.statusText}`);
+        }
 
         const jsonData = await response.json();
-        console.log("jsonData//", jsonData);
+        console.log("Fetched mobile data:", jsonData);
+
         return jsonData;
     } catch (err) {
-        // setError("Error fetching JSON");
-        console.log(err);
+        console.error("Error fetching mobile data:", err.message);
+        // Optionally, rethrow or return a fallback
+        throw err; // or return null;
     }
 };
 
-export const logIn = async (initialData,password) => {
+
+export const logIn = async (initialData,setLogin) => {
     try {
         const response = await axios.post("https://dummyjson.com/user/login", {
             username: initialData?.userName,
@@ -34,19 +41,18 @@ export const logIn = async (initialData,password) => {
             headers: { "Content-Type": "application/json" }
         });
 
-        console.log("Login Success:", response.data);
-        localStorage.setItem('login', JSON.stringify(response?.data));
-        return response?.data;
+        // localStorage.setItem('login', JSON.stringify(response?.data));
+        setLogin(response?.data)
+        toast.success("Loggedin Successfully")
     } catch (error) {
-        console.error("Login failed:", error);
-        throw error;
+        toast.error("Loggedin Successfully")
     }
 };
 
 export const fetchProducts = async ( categories, categoryData, setProducts, setLoading ) => {
     let allProducts = [];
     let skip = 0;
-    const limit = 30;
+    const limit = 90;
 
     try {
         while (true) {

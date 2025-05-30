@@ -29,11 +29,6 @@
     display: inline-block;
 }
 
-.dropdownText {
-    font-size: 16px;
-    cursor: pointer;
-}
-
 .arrow {
     font-size: 20px;
     margin-left: 5px;

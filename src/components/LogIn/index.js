@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import { LoginContext } from '../../App';
-import InputField from '../Input';
+import LoginInputField from '../loginInput';
 
 const LoginPage = ({ loggedIn }) => {
   const [isRightPanelActive, setRightPanelActive] = useState(false);
@@ -20,7 +20,7 @@ const LoginPage = ({ loggedIn }) => {
   const { login, setLogin } = useContext(LoginContext);
   const [isSignUp, setIsSignUp] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (isSignUp) {
       e.preventDefault();
@@ -31,16 +31,7 @@ const LoginPage = ({ loggedIn }) => {
       e.preventDefault(); // Prevent default form behavior
       console.log("hvjgf", initialData);
 
-      try {
-        const loginDetails = await logIn(loginData);
-        console.log("Final Login Details:", loginDetails);
-        localStorage.setItem('login', JSON.stringify(loginDetails));
-        setLogin(loginDetails)
-        loggedIn(true)
-      } catch (error) {
-        console.error("Login Error:", error);
-        loggedIn(false)
-      }
+       logIn(loginData, setLogin);
       setLoginData(initialData)
     }
     const modal = document.querySelector('[data-bs-dismiss="modal"]');
@@ -60,7 +51,7 @@ const LoginPage = ({ loggedIn }) => {
         <div className={`form-container ${isSignUp ? "sign-up-container" : "sign-in-container"}`}>
           <form onSubmit={handleSubmit}>
             <h4 className='text-center'>{isSignUp ? 'Create Account' : 'Sign In'}</h4>
-            <InputField label={"User Name"} type={'text'} id={'userName'} value={loginData} setLoginData={setLoginData}
+            <LoginInputField label={"User Name"} type={'text'} id={'userName'} value={loginData} setLoginData={setLoginData}
             />
             {/* <label htmlFor='username' className='form-label mb-0'>User Name</label>
             <input
@@ -72,7 +63,7 @@ const LoginPage = ({ loggedIn }) => {
               onChange={(e) => setUserName(e.target.value)}
             /> */}
             {isRightPanelActive && (
-              <InputField label={"Email"} type={'text'} id={'email'} value={loginData} setLoginData={setLoginData}/>
+              <LoginInputField label={"Email"} type={'text'} id={'email'} value={loginData} setLoginData={setLoginData} />
             )}
             {/* {isSignUp && (
               <>
@@ -87,7 +78,7 @@ const LoginPage = ({ loggedIn }) => {
                 />
               </>
             )} */}
-              <InputField label={"Password"} type={'password'} id={'password'} value={loginData} setLoginData={setLoginData}/>
+            <LoginInputField label={"Password"} type={'password'} id={'password'} value={loginData} setLoginData={setLoginData} />
             {!isSignUp && <a href='#' className='d-flex justify-content-center'>Forgot your password?</a>}
             <button type='submit' data-bs-dismiss='modal' aria-label='Close'>{isSignUp ? 'Sign Up' : 'Sign In'}</button>
           </form>

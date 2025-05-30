@@ -2,12 +2,14 @@ import React, { useContext, useEffect, useState } from 'react'
 import LoginPage from '../LogIn'
 import ArrowUp from '../../svg/ArrowUp'
 import ArrowDown from '../../svg/ArrowDown'
-import { toast } from 'react-toastify'
-import { Link } from 'react-router-dom'
+import { toast, ToastContainer } from 'react-toastify'
 
 const ListItems = ({ login, isOpen1, setIsOpen1, setLogin }) => {
     const [isRightPanelActive, setRightPanelActive] = useState(false);
-
+    const loggedIn = (data) => {
+            data ? toast.success("Loggedin Successfully")
+                : toast.error("Login Error")
+    }
     const handleLogout = (e) => {
         localStorage.removeItem("login")
         setLogin(null)
@@ -15,7 +17,7 @@ const ListItems = ({ login, isOpen1, setIsOpen1, setLogin }) => {
     };
     useEffect(() => {
         console.log("ddddddd", login);
-
+        
     }, [login])
 
     return (
@@ -53,10 +55,7 @@ const ListItems = ({ login, isOpen1, setIsOpen1, setLogin }) => {
                                 <div className="dropdownContent px-2">
                                     <div className='d-flex py-2'>
                                         <div className='w-25'><i className="bi bi-person-circle"></i></div>
-
-                                        <Link to={'/account'} style={{ textDecoration: 'none', color: '#000' }}>
-                                            My Profile
-                                        </Link>
+                                        <p className='w-75 p-0'> My Profile</p>
                                     </div>
                                     <hr className='my-0' />
                                     <div className='d-flex py-2'>
@@ -82,13 +81,14 @@ const ListItems = ({ login, isOpen1, setIsOpen1, setLogin }) => {
             <div className="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered modal-lg px-0">
                     <div className="modal-content m-4 m-md-0 position-relative">
-                        <LoginPage isRightPanelActive={isRightPanelActive} setRightPanelActive={setRightPanelActive} />
+                        <LoginPage loggedIn={loggedIn} isRightPanelActive={isRightPanelActive} setRightPanelActive={setRightPanelActive} />
                         <button type="button" className="btn close-btn" data-bs-dismiss="modal" aria-label="Close">
                             <i className={`bi bi-x-lg ${isRightPanelActive ? "text-dark" : "text-light"} `}></i>
                         </button>
                     </div>
                 </div>
             </div>
+            <ToastContainer position="top-right" autoClose={1500} />
         </div>
     )
 }

@@ -3,8 +3,8 @@
 import React, { useEffect, useState } from 'react'
 import categoriesData from '../../json/items.json';
 import './style.css';
-import ArrowUp from '@/app/svg/ArrowUp';
-import ArrowDown from '@/app/svg/ArrowDown';
+import ArrowUp from '../../svg/ArrowUp';
+import ArrowDown from '../../svg/ArrowDown';
 
 const Filter = ({ brands, setBrands }) => {
     const [activeIndex, setActiveIndex] = useState(null);

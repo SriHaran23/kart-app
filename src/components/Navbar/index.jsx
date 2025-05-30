@@ -16,15 +16,10 @@ import { decryptObject } from '../../functions';
 
 const Navbar = ({ theme, setTheme }) => {
     const [searchTerm, setSearchTerm] = useState('');
-    const [isOpen, setIsOpen] = useState(false);
-    const [modalIsOpen, setModalIsOpen] = useState(false);
     const [isOpen1, setIsOpen1] = useState(false);
-    const [profileName, setProfileName] = useState('123');
     const [isLoggedIn, setIsLoggedIn] = useState(false);
-    const [userData, setUserData] = useState(null);
     const word = "GleeKart";
     const colors = ['#234C9B', '#8242A0', '#14B2CD', '#E73F7D', '#F5526D', '#FB7D30', '#F56E1C', '#F99D22'];
-    const navigate = useNavigate()
     const { login, setLogin } = useContext(LoginContext);
     const { selectedCategory, setSelectedCategory } = useContext(CategoryContext)
 

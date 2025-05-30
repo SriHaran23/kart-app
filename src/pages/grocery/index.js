@@ -49,6 +49,7 @@ const Groceries = () => {
         : <div className='custom-card p-3 m-4 d-flex justify-content-start '>
           <div className="card-body p-auto">
             <div className='d-flex gap-3 align-items-center border-bottom mb-3 pb-1 '>
+              {console.log("completeData?.category?.image_name",completeData?.category?.image_name)}
               <img
                 className='text-center category-img '
                 src={`assets/img/categories/${completeData?.category?.image_name}`}

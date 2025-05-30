@@ -1,14 +1,18 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import realmeModels from '../../json/realmeModels.json';
 import realmePrices from '../../json/realmePrices.json';
 import './style.css';
 import Pagination from '../../components/pagintion';
+import { CompleteContext } from '../../App';
+import { Link } from 'react-router-dom';
 // import PriceRange from '../../components';
 // import { useData } from '../../context/DataContext';
 
 const MobileCategory = () => {
     const [mobilesBrands, setMobilesBrands] = useState([]);
     const [prices, setPrices] = useState(realmePrices?.realme_models);
+      const { completeData, setCompleteData } = useContext(CompleteContext)
+
     // const { data, setData } = useData() || {};
     // console.log('data:', data, 'setData:', setData);
 
@@ -33,13 +37,13 @@ const MobileCategory = () => {
 
     const handleClick = (mobile, index) => {
         // setData(category?.items?.models);
-        localStorage.setItem('mobileBrand', JSON.stringify(mobilesBrands[0]?.models));
-        localStorage.setItem('brand', mobile?.brand);
+        // localStorage.setItem('mobileBrand', JSON.stringify(mobilesBrands[0]?.models));
+        // localStorage.setItem('brand', mobile?.brand);
         console.log('mobile', mobile?.brand);
     };
 
     return (
-        <div className='mbl-category mt-5 mb-4 pt-4'>
+        <div className='mbl-category mb-4 '>
             {/* <div className="d-flex items-screen py-2">
                     <div className='custom-card  ms-2 me-2 p-2'>
                         <div className="card-body scrollable-div category-item">
@@ -49,10 +53,10 @@ const MobileCategory = () => {
                         </div>
                     </div> */}
                 <div className='row justify-content-start row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-gap-4 mx-auto'>
-                    {mobilesBrands?.map((mobile, index) => (
+                    {completeData?.category?.items?.map((mobile, index) => (
                         <div key={index} className="col">
                             <div className="custom-card w-100" onClick={() => handleClick(mobile, index)} >
-                                {/* <Link className='' href={'/categories/mobiles/models'} style={{ textDecoration: 'none', color: '#000' }}> */}
+                                <Link className='' to={`/MobileBrand/${mobile?.brand}`} style={{ textDecoration: 'none', color: '#000' }}>
                                     <div className="card-img-container" style={{ position: 'relative', height: '150px' }}>
                                         <img
                                             src={`/assets/img/mobiles/thumbnails/${mobile?.brand}.jpg`}
@@ -74,7 +78,7 @@ const MobileCategory = () => {
                                             <p className=''>*including coupon offer</p>
                                         </div>
                                     </div>
-                                {/* </Link> */}
+                                </Link>
                             </div>
                         </div >
                         // <div className='custom-card1' key={index}>

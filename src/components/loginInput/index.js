@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ShowOrHideEye from '../../svg/ShowOrHideEye';
 
-const InputField = ({ label, type, id, value, setLoginData }) => {
+const LoginInputField = ({ label, type, id, value, setLoginData }) => {
   const [isShow, setIsShow] = useState(false)
   const [isFocused, setIsFocused] = useState(false);
   const handleFocus = () => setIsFocused(true);
@@ -47,4 +47,4 @@ const InputField = ({ label, type, id, value, setLoginData }) => {
   );
 };
 
-export default InputField;
+export default LoginInputField;

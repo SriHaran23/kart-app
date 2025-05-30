@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Grocery = ({ product, index }) => {
 
     const handleClick = (product, index) => {
-        localStorage.setItem('productItem', JSON.stringify(product));
+        // localStorage.setItem('productItem', JSON.stringify(product));
     };
     return (
         <Link className='w-100 h-100' href={'/categories/product'} style={{ textDecoration: 'none', color: '#000' }}>

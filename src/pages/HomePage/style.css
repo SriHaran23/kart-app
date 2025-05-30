@@ -11,7 +11,7 @@
   /* Optional: for rounded corners */
 }
 
-.custom-card li {
+.custom-card .item-size {
   /* width: 7rem; */
   list-style: none;
   font-size: small;

@@ -39,9 +39,9 @@ const HomePage = () => {
     setCompleteData({...completeData,...temp})
     setSelectedCategory(category?.category);
     // localStorage.setItem('mobiles', JSON.stringify(category?.items));
-    localStorage.setItem('category', category?.category);
+    // localStorage.setItem('category', category?.category);
     console.log('categoryss', category);
-    encryptObject(category)
+    // encryptObject(category)
   };
 
   useEffect(() => {
@@ -71,8 +71,8 @@ const HomePage = () => {
           <h4 className='m-2 p-2 border-bottom'>Category</h4>
           <ul className='d-flex justify-content-around category py-2'>
             {categories.map((category, index) => (
-              <Link key={index} to={`/${categoryType[category?.category]}-category`} style={{ textDecoration: 'none', color: '#000' }}>
-                <li /* className='dropdown' */ className={`${index < categories?.length - 1 ? "me-5" : "me-4"} category-item`} onClick={() => handleClick(category, index)}>
+              <Link key={index} to={`/category/${categoryType[category?.category]}`} style={{ textDecoration: 'none', color: '#000' }}>
+                <li /* className='dropdown' */ className={`${index < categories?.length - 1 ? "me-5" : "me-4"} category-item item-size`} onClick={() => handleClick(category, index)}>
                   <span className=''>
                     <div className='d-flex justify-content-center'>
                       <img

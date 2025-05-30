@@ -1,12 +1,18 @@
 import './App.css';
 import Navbar from "./components/Navbar";
 import { Routes, Route } from 'react-router-dom';
-import HomePage from "./pages/HomePage";
 import { createContext, useEffect, useState } from 'react';
 import CartLoader from './components/loader';
+import HomePage from "./pages/HomePage";
 import MobileCategory from './pages/mobiles';
 import Groceries from './pages/grocery';
 import { decryptObject, encryptObject } from './functions';
+import { ToastContainer } from 'react-toastify';
+import CategoryPage from './pages/CategoryPage';
+import MobileBrands from './pages/models';
+import Account from './pages/account';
+import UserDetails from './components/account/UserDetails';
+import AddressDetails from './components/account/AddressDetails';
 
 export const LoaderContext = createContext(null);
 export const LoginContext = createContext(null);
@@ -37,14 +43,16 @@ function App() {
     setTimeout(() => {
       setLoader(!loader)
     }, 4000);
-    
+
     const decrypted = decryptObject()
-    console.log("decrypted", decrypted);
+    setLogin(decrypted)
   }, [])
 
   useEffect(() => {
-    encryptObject(completeData)
-  }, [completeData])
+    decryptObject()
+    encryptObject(login)
+    console.log("completeData", completeData)
+  }, [login])
 
   return (
     <CompleteContext.Provider value={{ completeData, setCompleteData }}>
@@ -54,19 +62,27 @@ function App() {
             <Navbar />
             {loader
               ? <CartLoader />
-              : <div className="">
+              : <div className="mt-2">
                 <Routes>
                   <Route path='/' element={<HomePage />} />
-                  <Route path='/mobiles-category' element={<MobileCategory />} />
+                  <Route path="/category/:categoryId" element={<CategoryPage />} />
+                  <Route path="/MobileBrand/:brandName" element={<MobileBrands />} />
+                  <Route path="/account" element={<Account />}>
+                    <Route index element={<UserDetails />} />
+                    <Route path="userDetails" element={<UserDetails />} />
+                    <Route path="addressDetails" element={<AddressDetails />} />
+                  </Route>
+                  {/* <Route path='/mobiles-category' element={<MobileCategory />} />
                   <Route path='/grocery-category' element={<Groceries />} />
                   <Route path='/electronics-category' element={<Groceries />} />
                   <Route path='/fashion-category' element={<Groceries />} />
                   <Route path='/appliances-category' element={<Groceries />} />
                   <Route path='/furniture-category' element={<Groceries />} />
-                  <Route path='/babyCare-category' element={<Groceries />} />
+                  <Route path='/babyCare-category' element={<Groceries />} /> */}
                 </Routes>
               </div>
             }
+            <ToastContainer position="top-right" autoClose={1500} />
           </CategoryContext.Provider>
         </LoginContext.Provider>
       </LoaderContext.Provider>

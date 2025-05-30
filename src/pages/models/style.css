@@ -1,47 +1,38 @@
-.items-screen {
-  height: 92vh;
+#items-screen {
+  height: 90vh;
+  overflow: hidden;
 }
 
 .custom-card {
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.308);
-    border-radius: 8px;
-  }
-  .custom-card1 {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.308);
+  border-radius: 8px;
+}
+
+/* .custom-card1 {
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.308);
     border-radius: 8px;
     width: 4rem;
-  }
-  .scrollable-div {
-    flex: 1;
-    overflow-y: auto;
-    overflow-x: hidden;
-    max-height: 100%;
-  }
-  
-  .scrollable-div::-webkit-scrollbar {
-    width: 7px;
-  }
-  
-  .scrollable-div::-webkit-scrollbar-thumb {
-    background-color: #ccc;
-    border-radius: 4px;
-  }
+  } */
+.scrollable-div {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 95%;
+}
 
-.specifications{
+.scrollable-div::-webkit-scrollbar {
+  width: 7px;
+}
+
+.scrollable-div::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.specifications {
   width: 65%;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  min-width: 160px;
-}
-
-.dropdownText {
-  font-size: 16px;
-  cursor: pointer;
 }
 
 .arrow {
@@ -49,74 +40,11 @@
   margin-left: 5px;
 }
 
-.dropdownContent {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  bottom: 100%;
-  min-width: 160px;
-  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 5px;
-}
-
-.dropdownContent::after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-bottom: 8px solid #fff;
-  z-index: 2;
-}
-
-.dropdownContent p {
-  margin: 0;
-  padding: 8px;
-  cursor: pointer;
-  border-bottom: 1px solid #ddd;
-}
-
-.dropdownContent.show {
-  display: block;
-}
-
-.checkBox {
-  appearance: none; /* Remove default styling */
-  width: 20px;
-  height: 20px;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  cursor: pointer;
-  position: relative;
-  display: inline-block;
-  background-color: #fff;
-}
-
-.checkBox:checked {
-  background-color: skyblue;
-  border-color: skyblue;
-}
-
-.checkBox:checked::after {
-  content: '✓'; /* Unicode checkmark */
-  position: absolute;
-  top: -4px;
-  left: 2px;
-  font-size: 16px;
-  font-weight: bolder;
-  color: white;
-}
-
 .accordion {
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 /* .accordion-item {
@@ -128,29 +56,39 @@
 } */
 
 .accordion-header {
-    background: #f7f7f7;
-    padding: 10px;
-    display: flex;
-    cursor: pointer;
-    font-weight: bold;
+  background: #f7f7f7;
+  padding: 10px;
+  display: flex;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .accordion-body {
-    max-height: 0;
-    display: none;
-    overflow: hidden;
-    padding: 0 15px;
+  max-height: 0;
+  display: none;
+  overflow: hidden;
+  padding: 0 15px;
 }
 
 .accordion-body.show {
-    max-height: 100%; /* Adjust as needed */
-    padding: 15px;
-    display: block;
+  max-height: 100%;
+  /* Adjust as needed */
+  padding: 15px;
+  display: block;
 }
 
-.mbl-img{
+.bottom-bar {
+  position: sticky;
+  bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mbl-img {
   width: 100%;
 }
+
 @media (max-width:500px) {
   .items-screen {
     height: 100%;

@@ -1,0 +1,19 @@
+.reviewImg{
+    color: #fff;
+    font-size: 45px;
+    width: 70px;
+    height: 70px;
+}
+
+.stars{
+    width: 50px;
+}
+.review{
+    width: 100%;
+}
+
+@media (min-width:1024px) {
+    .review{
+        width: 50% !important;
+    }
+}
