@@ -28,7 +28,9 @@ const MobileBrands = () => {
 
     useEffect(() => {
         const recall = async () => {
+            console.log("llaa",brandName);
             let data = await getMobiles(brandName)
+            
             setMobiles(data?.Models);
         }
 
@@ -52,7 +54,7 @@ const MobileBrands = () => {
                     <div className='d-block align-self-stretch gap-3 p-4 z-0'>
                         {currentRecords?.map((mobile, index) => (
                             // <div>
-                            <Link key={index} to={'/categories/product'} onClick={() => handleProduct(mobile)} style={{ textDecoration: 'none', color: '#000' }}>
+                            <Link key={index} to={`/Mobiles/${brandName}/${mobile?.Model}`} onClick={() => handleProduct(mobile)} style={{ textDecoration: 'none', color: '#000' }}>
                                 {/* <span className=''>
                                     <div className='d-flex justify-content-center'>
                                         <img

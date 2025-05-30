@@ -55,7 +55,7 @@ const Categories = () => {
           <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-gap-4">
             {categoryItems.map((mobile, i) => (
               <div key={i} className="col">
-                <div className="custom-card w-100" onClick={() => handleMobileClick(mobile)}>
+                <div className="custom-card w-100" /* onClick={() => handleMobileClick(mobile)} */>
                   <div style={{ height: '150px', position: 'relative' }}>
                     <img
                       src={`/assets/img/mobiles/thumbnails/${mobile?.brand}.jpg`}

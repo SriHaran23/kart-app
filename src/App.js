@@ -13,6 +13,7 @@ import MobileBrands from './pages/models';
 import Account from './pages/account';
 import UserDetails from './components/account/UserDetails';
 import AddressDetails from './components/account/AddressDetails';
+import ItemDetails from './pages/product';
 
 export const LoaderContext = createContext(null);
 export const LoginContext = createContext(null);
@@ -28,21 +29,11 @@ function App() {
   }
   const [completeData, setCompleteData] = useState(completeInitialData);
   const [selectedCategory, setSelectedCategory] = useState();
-  const categories = {
-    Groceries: "grocery",
-    Mobiles: "mobiles",
-    Electronics: "electronics",
-    Fashion: "fashion",
-    Appliances: "appliances",
-    "Home & Furniture": "furniture",
-    "Toys & Baby Care": "babyCare"
-  };
+ 
   useEffect(() => {
-    console.log("completeData", completeData)
-
     setTimeout(() => {
       setLoader(!loader)
-    }, 4000);
+    }, 1000);
 
     const decrypted = decryptObject()
     setLogin(decrypted)
@@ -51,7 +42,6 @@ function App() {
   useEffect(() => {
     decryptObject()
     encryptObject(login)
-    console.log("completeData", completeData)
   }, [login])
 
   return (
@@ -65,8 +55,10 @@ function App() {
               : <div className="mt-2">
                 <Routes>
                   <Route path='/' element={<HomePage />} />
-                  <Route path="/category/:categoryId" element={<CategoryPage />} />
-                  <Route path="/MobileBrand/:brandName" element={<MobileBrands />} />
+                  <Route path="/category/:categoryName" element={<CategoryPage />} />
+                  <Route path="/category/:categoryName/:productId" element={<ItemDetails />} />
+                  <Route path="/Mobiles/:brandName" element={<MobileBrands />} />
+                  <Route path="/Mobiles/:brand/:modal" element={<ItemDetails />} />
                   <Route path="/account" element={<Account />}>
                     <Route index element={<UserDetails />} />
                     <Route path="userDetails" element={<UserDetails />} />

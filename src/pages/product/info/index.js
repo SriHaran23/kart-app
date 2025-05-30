@@ -2,21 +2,18 @@
 
 import React, { useEffect, useState } from 'react'
 import './style.css';
-import StarRating from '@/app/components/starRating';
 import Offers from '../../../json/offers.json'
 // import Offers from '@/app/json/offers.json'
-import 'bootstrap-icons/font/bootstrap-icons.css';
-import { generateRandomColor } from '@/app/functions';
+import { generateRandomColor } from '../../../functions';
 
-const DetailsInfo = ({setLoading}) => {
-    const [product, setProduct] = useState([]);
+const DetailsInfo = ({setLoading,product}) => {
     // const [offers, setOffers] = useState({});
 
     useEffect(() => {
-        const productItem = JSON.parse(localStorage.getItem('productItem'));
-        if (productItem) {
-            setProduct(productItem)
-        }
+        // const productItem = JSON.parse(localStorage.getItem('productItem'));
+        // if (productItem) {
+        //     setProduct(productItem)
+        // }
     }, []);
 
     
@@ -65,7 +62,7 @@ const DetailsInfo = ({setLoading}) => {
                                 <span className={`d-inline-flex rounded gap-1 fs-6 p-1 lh-sm text-light ${review?.rating > 4 ? 'bg-success' : review?.rating > 2 && review?.rating <= 4 ? 'bg-warning' : 'bg-danger'}`}>
                                     <p className='fw-semibold mb-0'>{review?.rating}</p>&#9733;
                                 </span>
-                                <StarRating rating={review?.rating} />
+                                {/* <StarRating rating={review?.rating} /> */}
                             </div>
                         </div>
                         <p className='text-body-tertiary mb-0' style={{ fontSize: '14px' }}>{review?.reviewerEmail}</p>
@@ -81,7 +78,7 @@ const DetailsInfo = ({setLoading}) => {
                     <div className='ms-2 review'>
                         <div className='d-flex justify-content-between'>
                             <b className=''>{review?.reviewerName}</b>
-                            <StarRating rating={review?.rating} />
+                            {/* <StarRating rating={review?.rating} /> */}
                         </div>
                         <p className='text-body-tertiary mb-0' style={{ fontSize: '14px' }}>{review?.reviewerEmail}</p>
                         <p className='mb-0'>{review?.comment}</p>
@@ -96,7 +93,7 @@ const DetailsInfo = ({setLoading}) => {
                     <div className='ms-2 review'>
                         <div className='d-flex justify-content-between'>
                             <b className=''>{review?.reviewerName}</b>
-                            <StarRating rating={review?.rating} />
+                            {/* <StarRating rating={review?.rating} /> */}
                         </div>
                         <p className='text-body-tertiary mb-0' style={{ fontSize: '14px' }}>{review?.reviewerEmail}</p>
                         <p className='mb-0'>{review?.comment}</p>

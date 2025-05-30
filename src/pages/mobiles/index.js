@@ -4,11 +4,13 @@ import realmePrices from '../../json/realmePrices.json';
 import './style.css';
 import Pagination from '../../components/pagintion';
 import { CompleteContext } from '../../App';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 // import PriceRange from '../../components';
 // import { useData } from '../../context/DataContext';
 
 const MobileCategory = () => {
+      const { categoryName } = useParams();
+    
     const [mobilesBrands, setMobilesBrands] = useState([]);
     const [prices, setPrices] = useState(realmePrices?.realme_models);
       const { completeData, setCompleteData } = useContext(CompleteContext)
@@ -56,11 +58,11 @@ const MobileCategory = () => {
                     {completeData?.category?.items?.map((mobile, index) => (
                         <div key={index} className="col">
                             <div className="custom-card w-100" onClick={() => handleClick(mobile, index)} >
-                                <Link className='' to={`/MobileBrand/${mobile?.brand}`} style={{ textDecoration: 'none', color: '#000' }}>
+                                <Link className='' to={`/Mobiles/${mobile?.brand}`} style={{ textDecoration: 'none', color: '#000' }}>
                                     <div className="card-img-container" style={{ position: 'relative', height: '150px' }}>
                                         <img
                                             src={`/assets/img/mobiles/thumbnails/${mobile?.brand}.jpg`}
-                                            alt="Card image"
+                                            alt="thumbnail"
                                             style={{
                                                 width: '100%',
                                                 height: '180px',

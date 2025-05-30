@@ -11,9 +11,9 @@ export const generateRandomColor = () => {
 };
 
 export const getMobiles = async (brand) => {
+    console.log("brand",brand);
     try {
         const response = await fetch(`/assets/json/mobiles/${brand}Models.json`);
-console.log("response",response);
 
         if (!response.ok) {
             throw new Error(`Failed to load JSON: ${response.status} ${response.statusText}`);
@@ -64,20 +64,35 @@ export const fetchProducts = async ( categories, categoryData, setProducts, setL
         var temp = []
         for (let index = 0; index < allProducts.length; index++) {
             if (allProducts[index]?.category == categories[categoryData]) {
-                // console.log("allProducts", allProducts[index]);
                 temp = [...temp, allProducts[index]]
             }
         }
-        console.log("////", temp);
-
         setProducts(allProducts);
-
     } catch (error) {
         console.error('Error fetching products:', error);
     } finally {
         setLoading(false);
     }
 };
+
+
+
+export const getProduct = async ( id,setProduct,setLoading ) => {
+    try {
+        const response = await axios.get(`https://dummyjson.com/products/${id}`)
+        console.log("hhj",response);
+        if(response){
+            setLoading(false)
+        }
+        setProduct({...response.data})
+    }
+    catch(error){
+        console.error('Error fetching products:', error);
+    }
+}
+
+
+
 
 const secretKey = 'Hanvy@Sri23';
 

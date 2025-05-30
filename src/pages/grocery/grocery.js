@@ -1,19 +1,20 @@
 import React, { useEffect } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const Grocery = ({ product, index }) => {
+  const { categoryName } = useParams();
 
     const handleClick = (product, index) => {
         // localStorage.setItem('productItem', JSON.stringify(product));
     };
     return (
-        <Link className='w-100 h-100' href={'/categories/product'} style={{ textDecoration: 'none', color: '#000' }}>
+        <Link className='w-100 h-100' to={`/category/${categoryName}/${product?.id}`} style={{ textDecoration: 'none', color: '#000' }}>
             <div className="custom-card1 h-100 position-relative" onClick={() => handleClick(product, index)} >
                 <div className="card-img-container" style={{ position: 'relative', height: '220px' }}>
                     <img
                         src={product?.thumbnail}
                         className="card-img-top"
-                        alt="Card image"
+                        alt="thumbnail"
                         style={{
                             // width: 'auto',
                             // height: '200px',

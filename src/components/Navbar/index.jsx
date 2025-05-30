@@ -1,18 +1,9 @@
 'use client';
 
 import React, { useState, useEffect, useContext } from 'react';
-import ProfileIcon from '../../svg/ProfileIcon';
 import "./style.css"
-import ArrowUp from '../../svg/ArrowUp';
-import ArrowDown from '../../svg/ArrowDown';
-import CartIcon from '../../svg/CartIcon';
-import NotificationIcon from '../../svg/Notification';
-import FavouriteIcon from '../../svg/Favourite';
-import OrderIcon from '../../svg/OrderIcon';
-import { useNavigate } from 'react-router-dom';
 import ListItems from './listItems';
 import { CategoryContext, LoginContext } from '../../App';
-import { decryptObject } from '../../functions';
 
 const Navbar = ({ theme, setTheme }) => {
     const [searchTerm, setSearchTerm] = useState('');

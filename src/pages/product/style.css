@@ -48,5 +48,5 @@ div::-webkit-scrollbar-thumb:hover {
 
 .product-items{
   width: max-content;
-  height: calc(100vh - 100px);
+  height: 80vh
 }

@@ -71,7 +71,7 @@ const HomePage = () => {
           <h4 className='m-2 p-2 border-bottom'>Category</h4>
           <ul className='d-flex justify-content-around category py-2'>
             {categories.map((category, index) => (
-              <Link key={index} to={`/category/${categoryType[category?.category]}`} style={{ textDecoration: 'none', color: '#000' }}>
+              <Link key={index} to={`/category/${category?.category}`} style={{ textDecoration: 'none', color: '#000' }}>
                 <li /* className='dropdown' */ className={`${index < categories?.length - 1 ? "me-5" : "me-4"} category-item item-size`} onClick={() => handleClick(category, index)}>
                   <span className=''>
                     <div className='d-flex justify-content-center'>

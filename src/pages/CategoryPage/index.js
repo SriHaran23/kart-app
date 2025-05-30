@@ -4,12 +4,12 @@ import MobileCategory from '../mobiles';
 import Groceries from '../grocery';
 
 const CategoryPage = () => {
-    const { categoryId } = useParams();
+    const { categoryName } = useParams();
 
     return (
         <div>
             {
-                categoryId === 'mobiles'
+                categoryName === 'Mobiles'
                     ? <MobileCategory />
                     : <Groceries />
             }
