@@ -14,18 +14,31 @@ export const getMobiles = async (brand) => {
     console.log("brand",brand);
     try {
         const response = await fetch(`/assets/json/mobiles/${brand}Models.json`);
-
         if (!response.ok) {
             throw new Error(`Failed to load JSON: ${response.status} ${response.statusText}`);
         }
-
         const jsonData = await response.json();
-        console.log("Fetched mobile data:", jsonData);
-
+        console.log("Fetched mobiles data:", jsonData);
         return jsonData;
     } catch (err) {
         console.error("Error fetching mobile data:", err.message);
-        // Optionally, rethrow or return a fallback
+        throw err; // or return null;
+    }
+};
+
+export const getMobile = async (brand,model,setMobiles) => {
+    try {
+        const data = await fetch(`/assets/json/mobiles/${brand}Models.json`);
+        if (!data.ok) {
+            throw new Error(`Failed to load JSON: ${data.status} ${data.statusText}`);
+        }
+        const jsonData = await data.json();
+        const response = jsonData?.Models.filter((el)=>el?.Model===model.replaceAll('_',' '))
+        setMobiles({...response[0]})
+        console.log("mobile data:", jsonData,response);
+        // return jsonData;
+    } catch (err) {
+        console.error("Error fetching mobile data:", err.message);
         throw err; // or return null;
     }
 };

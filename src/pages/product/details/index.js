@@ -6,8 +6,11 @@ import colorJson from '../../../json/color'
 import './style.css';
 import SpecificationsCategory from './specifications';
 import Info from './info';
+import { getMobile } from '../../../functions';
+import { useParams } from 'react-router-dom';
 
 const Details = () => {
+    const {brand,modal} = (useParams());
     const [mobiles, setMobiles] = useState([]);
     const [features, setFeatures] = useState({
         color: [],
@@ -20,11 +23,8 @@ const Details = () => {
     const [isExpanded, setIsExpanded] = useState(false);
 
     useEffect(() => {
-        const mobile = JSON.parse(localStorage.getItem('product'));
-        if (mobile) {
-            setMobiles(mobile)
-        }
-    }, []);
+        getMobile(brand,modal,setMobiles)
+    }, [brand,modal]);
 
     const toggleExpand = () => {
         setIsExpanded(!isExpanded);
@@ -32,20 +32,18 @@ const Details = () => {
 
     useEffect(() => {
         let colorArray = mobiles?.Specifications?.General?.Colours?.split(", ")
-        let colorName = []
-        let ramArray = mobiles?.Specifications?.Performance?.RAM?.split(", ")
-        let storageArray = mobiles?.Specifications?.Performance?.Internal_Storage?.split(", ")
-        let saving = parseInt(pricesJson?.realme_models[0]?.original_price?.replace(/₹|,/g, ""), 10) - parseInt(pricesJson?.realme_models[0]?.price?.replace(/₹|,/g, ""), 10);
-
-        colorArray?.forEach(item => {
-            colorName.push(colorJson[item]);
-        });        
-        features.color = colorName;
-        features.ram = ramArray;
-        features.storage = storageArray;
-        features.saving = saving;
+        features.color = colorArray?.map(item => {
+            return colorJson[item]
+        });;
+        features.ram = mobiles?.Specifications?.Performance?.RAM?.split(", ");
+        features.storage = mobiles?.Specifications?.Performance?.Internal_Storage?.split(", ");
+        features.saving = parseInt(pricesJson?.realme_models[0]?.original_price?.replace(/₹|,/g, ""), 10) - parseInt(pricesJson?.realme_models[0]?.price?.replace(/₹|,/g, ""), 10);;
         setFeatures({ ...features })
     }, [mobiles])
+useEffect(() => {
+  console.log("features",features);
+  
+}, [features])
 
     return (
         <div className='details px-3 pb-0'>

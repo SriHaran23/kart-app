@@ -22,7 +22,7 @@ const MobileBrands = () => {
     const nPages = Math.ceil(mobiles?.length / recordsPerPage);
 
     const handleProduct = (mobile) => {
-        localStorage.setItem('product', JSON.stringify(mobile));
+        // localStorage.setItem('product', JSON.stringify(mobile));
     }
 
 
@@ -43,7 +43,8 @@ const MobileBrands = () => {
     }, [products])
 
     return (
-        <div id='items-screen' className='d-flex justify-content-evenly pb-0 gap-3 px-3'>
+        <div className='d-flex align-items-center h-100'>
+        <div id='items-screen' className='container d-flex justify-content-evenly pb-0 gap-3 px-3'>
             <div className='custom-card my-2 col-2 '>
                 <div className="card-body p-2 scrollable-div">
                     <Filter brands={brands} setBrands={setBrands} />
@@ -54,7 +55,7 @@ const MobileBrands = () => {
                     <div className='d-block align-self-stretch gap-3 p-4 z-0'>
                         {currentRecords?.map((mobile, index) => (
                             // <div>
-                            <Link key={index} to={`/Mobiles/${brandName}/${mobile?.Model}`} onClick={() => handleProduct(mobile)} style={{ textDecoration: 'none', color: '#000' }}>
+                            <Link key={index} to={`/Mobiles/${brandName}/${mobile?.Model?.replaceAll(' ','_')}`} onClick={() => handleProduct(mobile)} style={{ textDecoration: 'none', color: '#000' }}>
                                 {/* <span className=''>
                                     <div className='d-flex justify-content-center'>
                                         <img
@@ -69,8 +70,8 @@ const MobileBrands = () => {
                                 </span> */}
                                 <div className='category-item1 row'>
                                     {/* <Image src='/assets/img/mobiles/realme/1/black/1.jpg' alt="mobile" width={50} height={38} />   */}
-                                    <div className='col-4 col-md-3 justify-content-center'>
-                                        <img className='mx-auto w-50 mbl-img' src='/assets/img/mobiles/realme/1/black/1.jpg' alt="mobile" />
+                                    <div className='col-4 col-md-3 d-flex justify-content-center'>
+                                        <img className='mx-auto mbl-img' src='/assets/img/mobiles/realme/1/black/1.jpg' alt="mobile" />
                                     </div>
                                     {/* <div className='d-flex justify-content-around mt-3'> */}
                                     <div className='col-8 col-md-9 d-block d-md-flex specifications'>
@@ -98,7 +99,7 @@ const MobileBrands = () => {
                                     </div>
                                     {/* </div> */}
                                 </div>
-                                {index < currentRecords.length - 1 && <hr className='mb-2' />}
+                                {index < currentRecords.length - 1 && <hr className='' />}
                             </Link>
                         ))}
                     </div>
@@ -107,6 +108,7 @@ const MobileBrands = () => {
                         <Pagination nPages={nPages} currentPage={currentPage} setCurrentPage={setCurrentPage} />
                     </div>
             </div>
+        </div>
         </div>
     )
 }

@@ -1,6 +1,8 @@
 import React from 'react'
 
 const Info = ({mobiles,features}) => {
+    console.log(":",features);
+    
     return (
         <div>
             <div>

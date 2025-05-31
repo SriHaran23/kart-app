@@ -3,9 +3,10 @@ overflow-y: hidden;
 }
 
 .carousel-image {
-  width: 80px;
-  height: 80px;
-  flex-shrink: 0;
+  width: 15%;
+  /* height: 35%; */
+  /* flex-shrink: 0; */
+  object-fit: contain;
 }
 
 .btn.disabled {
@@ -20,10 +21,10 @@ overflow-y: hidden;
   font-size: 18px;
 }
 
-.arrow:disabled {
+/* .arrow:disabled {
   opacity: 0.5;
   cursor: not-allowed;
-}
+} */
 
 div::-webkit-scrollbar {
   width: 10px;
@@ -37,16 +38,24 @@ div::-webkit-scrollbar-track {
  
 /* Handle */
 div::-webkit-scrollbar-thumb {
-  background: #00d9ff; 
+  /* background: #00d9ff;  */
   border-radius: 10px;
 }
 
 /* Handle on hover */
-div::-webkit-scrollbar-thumb:hover {
+/* div::-webkit-scrollbar-thumb:hover {
   background: #1b9fb6; 
+} */
+.product-img{
+
+  height: 78vh;
 }
 
+.product-img > div > img{
+  width: 100% !important;
+  height: 78vh !important;
+  object-fit: contain;
+}
 .product-items{
-  width: max-content;
-  height: 80vh
+  /* object-fit: contain; */
 }

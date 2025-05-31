@@ -34,9 +34,9 @@ const ItemDetails = () => {
     }, [location,productId]);
 
     return (
-        <div className='page-height'>
+        <div className='page-height container'>
             {loading ? <CartLoader /> :
-                <div className='d-lg-flex mt-4'>
+                <div className='d-lg-flex'>
                     <div className='col-lg-5 pe-0'>
                        <Images categoryName={categoryName} product={product} images={location?.pathname.split('/')[1] === 'Mobiles' ? images :product?.images} imageIndex={imageIndex} setImagesIndex={setImagesIndex} />
                     </div>
