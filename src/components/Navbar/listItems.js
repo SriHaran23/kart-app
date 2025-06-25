@@ -30,16 +30,20 @@ const ListItems = ({ login, isOpen1, setIsOpen1, setLogin }) => {
                     </i></span>
                     <span className="d-flex d-md-none">Notifications</span>
                 </li>
-                <li className='d-inline-flex align-items-center gap-2 gap-md-1' /* onClick={() => setIsOpen(!isOpen)} */>
-                    <span className="cart lh-1"><i className="bi bi-bag-heart"></i></span>
-                    <span className="">Cart</span>
-                </li>
+                <Link to={'/cart'} style={{ textDecoration: 'none', color: '#000' }}>
+                    <li className='d-inline-flex align-items-center gap-2 gap-md-1' /* onClick={() => setIsOpen(!isOpen)} */>
+                        <span className="cart lh-1"><i className="bi bi-bag-heart"></i></span>
+                        <span className="">Cart</span>
+                    </li>
+                </Link>
                 <li className='d-inline-flex'>
                     {!login?.username ? (
-                        <span className="dropdownText d-flex align-items-center gap-2 gap-md-1 fs-5" data-bs-toggle="modal" data-bs-target="#loginModal">
-                            <span className=''><i className="bi bi-person-circle"></i></span>
-                            <span className="">Login</span>
-                        </span>
+                        <Link to={'/login'} style={{ textDecoration: 'none', color: '#000' }}>
+                            <span className="dropdownText d-flex align-items-center gap-2 gap-md-1 fs-5">
+                                <span className=''><i className="bi bi-person-circle"></i></span>
+                                <span className="">Login</span>
+                            </span>
+                        </Link>
                     ) : (
                         <div className="dropdown nav-link-item" onClick={() => setIsOpen1(!isOpen1)}  >
                             <span className="dropdownText d-flex align-items-center gap-1">
@@ -79,7 +83,7 @@ const ListItems = ({ login, isOpen1, setIsOpen1, setLogin }) => {
                     )}
                 </li>
             </ul>
-            <div className="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            {/* <div className="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered modal-lg px-0">
                     <div className="modal-content m-4 m-md-0 position-relative">
                         <LoginPage isRightPanelActive={isRightPanelActive} setRightPanelActive={setRightPanelActive} />
@@ -88,7 +92,7 @@ const ListItems = ({ login, isOpen1, setIsOpen1, setLogin }) => {
                         </button>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

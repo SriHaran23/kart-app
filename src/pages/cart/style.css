@@ -1,0 +1,12 @@
+.custom-card {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.308);
+  border-radius: 8px;
+}
+
+.scrollable-div {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 95%;
+}

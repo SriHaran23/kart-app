@@ -8,8 +8,8 @@ import { Link, useParams } from 'react-router-dom';
 // import PriceRange from '../../components';
 // import { useData } from '../../context/DataContext';
 
-const MobileCategory = () => {
-      const { categoryName } = useParams();
+const MobileCategory = ({categoryName}) => {
+    //   const { categoryName } = useParams();
     
     const [mobilesBrands, setMobilesBrands] = useState([]);
     const [prices, setPrices] = useState(realmePrices?.realme_models);
@@ -27,10 +27,10 @@ const MobileCategory = () => {
     // const nPages = Math.ceil(mobilesBrands?.length / recordsPerPage);
 
     useEffect(() => {
-        const mobile = localStorage.getItem('mobiles');
-        if (mobile) {
-            setMobilesBrands(JSON.parse(mobile))
-        }
+        // const mobile = localStorage.getItem('mobiles');
+        // if (mobile) {
+        //     setMobilesBrands(JSON.parse(mobile))
+        // }
     }, []);
     useEffect(() => {
         console.log("mobilesBrands", mobilesBrands);
@@ -54,7 +54,7 @@ const MobileCategory = () => {
                             <PriceRange />
                         </div>
                     </div> */}
-                <div className='row justify-content-start row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-gap-4 mx-auto'>
+                <div className='row justify-content-start row-cols-2 row-cols-md-3 row-cols-lg-4 row-gap-4 m-4'>
                     {completeData?.category?.items?.map((mobile, index) => (
                         <div key={index} className="col">
                             <div className="custom-card w-100" onClick={() => handleClick(mobile, index)} >

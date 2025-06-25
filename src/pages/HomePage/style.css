@@ -1,5 +1,5 @@
 .home-div{
-  height: 100svh;
+  height: 100vh;
 }
 
 .custom-card {
@@ -10,6 +10,17 @@
   border-radius: 8px;
   /* Optional: for rounded corners */
 }
+.content-main{
+  width: calc(100vw - 100px);
+}
+.content-div{
+  height: 85vh;
+  overflow-y: auto;
+}
+.category{
+  width: 70px;
+  height: 88vh;
+}
 
 .custom-card .item-size {
   /* width: 7rem; */
@@ -17,11 +28,7 @@
   font-size: small;
 }
 
-.category {
-  overflow-x: auto;
-}
-
-.category-item {
+.categories-item {
   width: max-content;
 }
 
@@ -34,4 +41,22 @@
   position: absolute;
   top: -20%;
   left: 10px;
+}
+
+@media (max-width:991px) {
+  .category{
+    width: 92vw;
+    overflow-x: auto;
+    height: auto;
+  }
+  .content-main{
+    width: 92vw;
+    margin: 17px;
+  }
+  .content-div{
+    height: 100%;
+  }
+  .category-img{
+    width: 70px;
+  }
 }

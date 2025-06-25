@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.login-page {
+  height: 88vh;
+}
+
 .login-page h1 {
   font-weight: bold;
   margin: 0;
@@ -82,7 +86,7 @@
   position: relative;
   overflow: hidden;
   max-width: 100%;
-  min-height: 480px;
+  min-height: 500px;
 }
 
 .login-page .form-container {
@@ -212,11 +216,140 @@
   width: 40px;
 }
 
-@media (max-width:500px) {
-  .overlay-container{
-    display: none;
+@media (max-width: 500px) {
+  .login-page .container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    padding: 20px;
+    width: 100%;
+    min-height: auto;
+    border-radius: 0;
   }
-  .form-container{
-    min-width: 100%;
+
+  .login-page .form-container {
+    position: static;
+    width: 100%;
+    transform: none !important;
+    opacity: 1 !important;
+    z-index: auto;
+  }
+
+  .login-page .overlay-container {
+    display: none !important;
+  }
+
+  .login-page .text-input-container label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #333;
+  }
+
+  .login-page .inputField,
+  .login-page .form-control {
+    border-radius: 15px;
+    border: 1px solid lightgrey;
+    padding: 12px 15px;
+    font-size: 16px;
+  }
+
+  .login-page .input-group-text {
+    background: transparent;
+    border: none;
+  }
+
+  .login-page button[type="submit"] {
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    /* background: linear-gradient(to right, #003366, #004080, #0059b3, #0073e6); */
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .login-page button[type="submit"]::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 300%;
+    left: -100%;
+    top: 0;
+    transition: all 0.4s ease;
+    z-index: 0;
+  }
+
+  .login-page button[type="submit"]:hover::before {
+    left: 0;
+  }
+
+  .login-page button[type="submit"] {
+    color: #fff;
+    z-index: 1;
+  }
+
+  .login-page button[type="submit"]::before {
+    z-index: 0;
+  }
+
+  .login-page .form-control,
+  .login-page .inputField {
+    background-color: #f9f9f9;
+  }
+
+  .login-page a {
+    color: #1a75ff;
+    font-size: 13px;
+    margin-top: 10px;
+    text-align: right;
+  }
+
+  .login-page h4.text-center {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  /* Optional: Slide-toggle style mimic */
+  .login-page .mobile-tab-switch {
+    display: flex;
+ background-color: #fff; /* Light blue background */
+  border: 1px solid #FF4B2B;    border-radius: 15px;
+    overflow: hidden;
+    margin: 20px;
+  }
+
+  .login-page .mobile-tab-switch button {
+    flex: 1;
+    padding: 10px;
+    background: none;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #333;
+    position: relative;
+    z-index: 1;
+  }
+
+  .login-page .mobile-tab-switch .slider-tab {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    border-radius: 15px;
+  background: #FF4B2B;
+    transition: all 0.4s ease;
+    z-index: 0;
+  }
+
+  .login-page .mobile-tab-switch.signup-active .slider-tab {
+    left: 50%;
+  }
+
+  .login-page .mobile-tab-switch button.active {
+    color: white;
   }
 }

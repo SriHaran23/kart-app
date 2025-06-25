@@ -1,16 +1,21 @@
 import React, { useContext, useEffect, useState } from 'react';
 import './style.css';
 import ShowOrHideEye from '../../svg/ShowOrHideEye';
-import { logIn } from '../../functions';
-import { useNavigate } from 'react-router-dom';
+import { logIn, loginFormSubmit, addUsers, getUsers, getValidationSchema } from '../../functions';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import { LoginContext } from '../../App';
-import LoginInputField from '../loginInput';
+import LoginInputField from './input';
+import { useFormik } from 'formik';
+import * as Yup from "yup";
+import LoginButtons from './button';
 
-const LoginPage = ({ loggedIn }) => {
+const LoginPage = ({ }) => {
+  const location = useLocation();
   const [isRightPanelActive, setRightPanelActive] = useState(false);
   const [isRightMobilePanelActive, setRightMobilePanelActive] = useState(false);
+  const from = location.state?.from?.pathname || "/";
   const [initialData, setInitialData] = useState({
     userName: "",
     password: "",
@@ -19,89 +24,73 @@ const LoginPage = ({ loggedIn }) => {
   const [loginData, setLoginData] = useState(initialData);
   const { login, setLogin } = useContext(LoginContext);
   const [isSignUp, setIsSignUp] = useState(false);
+  const formData = useFormik({
+    initialValues: {
+      userName: "",
+      password: "",
+      email: "",
+      isSignUp: isRightPanelActive
+    },
+    validationSchema: getValidationSchema(isRightPanelActive),
+    onSubmit: isRightPanelActive ? "/* addUsers */" : login
+  })
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    if (isSignUp) {
-      e.preventDefault();
-      // Add sign-up logic if needed
-      console.log('Sign-up form submitted with:', loginData);
-    }
-    else {
-      e.preventDefault(); // Prevent default form behavior
-      console.log("hvjgf", initialData);
 
-       logIn(loginData, setLogin);
-      setLoginData(initialData)
-    }
-    const modal = document.querySelector('[data-bs-dismiss="modal"]');
-    if (modal && login) {
-      modal.click();
-    }
   };
 
   const handleFormChange = () => {
-    // setRightPanelActive(!isRightPanelActive)
+    setRightPanelActive(!isRightPanelActive)
     setRightMobilePanelActive(!isRightMobilePanelActive)
   }
   return (
-    <div className='login-page'>
-      <div className={`container position-relative px-0 mx-0 ${isRightPanelActive ? 'right-panel-active' : ''}`} id="container">
-        {/* Sign Up Form */}
-        <div className={`form-container ${isSignUp ? "sign-up-container" : "sign-in-container"}`}>
-          <form onSubmit={handleSubmit}>
-            <h4 className='text-center'>{isSignUp ? 'Create Account' : 'Sign In'}</h4>
-            <LoginInputField label={"User Name"} type={'text'} id={'userName'} value={loginData} setLoginData={setLoginData}
-            />
-            {/* <label htmlFor='username' className='form-label mb-0'>User Name</label>
-            <input
-              className='form-control'
-              placeholder='Enter your Name'
-              type='text'
-              id='username'
-              value={userName}
-              onChange={(e) => setUserName(e.target.value)}
-            /> */}
-            {isRightPanelActive && (
-              <LoginInputField label={"Email"} type={'text'} id={'email'} value={loginData} setLoginData={setLoginData} />
-            )}
-            {/* {isSignUp && (
-              <>
-                <label htmlFor='email' className='form-label mb-0'>Email Address</label>
-                <input
-                  className='form-control'
-                  placeholder='Enter your Email Address'
-                  type='email'
-                  id='email'
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-              </>
-            )} */}
-            <LoginInputField label={"Password"} type={'password'} id={'password'} value={loginData} setLoginData={setLoginData} />
-            {!isSignUp && <a href='#' className='d-flex justify-content-center'>Forgot your password?</a>}
-            <button type='submit' data-bs-dismiss='modal' aria-label='Close'>{isSignUp ? 'Sign Up' : 'Sign In'}</button>
-          </form>
-        </div>
-
-        {/* Overlay Section */}
-        <div className="overlay-container">
-          <div className="overlay">
-            <div className="overlay-panel overlay-left">
-              <h4 className='fs-1'>Welcome Back!</h4>
-              <p>To keep connected with us, please login with your personal info</p>
-              <button className="ghost" onClick={() => setRightPanelActive(false)}>
-                Sign In
+    <div className='login-page d-flex justify-content-center align-items-center'>
+      <div className=' w-75 d-flex justify-content-center align-items-center'>
+        <div className={`container w-75 position-relative px-0 mx-0 ${isRightPanelActive ? 'right-panel-active' : ''}`} id="container">
+          {/* Sign Up Form */}
+          <div className={`form-container ${isRightPanelActive ? "sign-up-container" : "sign-in-container"}`}>
+            {/* Mobile toggle buttons for Sign In / Sign Up */}
+            <div className={`mobile-tab-switch ${isRightPanelActive ? 'signup-active' : ''} d-md-none position-relative`}>
+              <div className="slider-tab"></div>
+              <button
+                className={`login ${!isRightPanelActive ? 'active' : ''}`}
+                type="button"
+                onClick={() => {
+                  setIsSignUp(false);
+                  setRightPanelActive(false);
+                }}
+              >
+                Login
               </button>
-            </div>
-            <div className="overlay-panel overlay-right">
-              <h4 className='fs-1'>Hello, Cartie!</h4>
-              <p>Enter your personal details and start your journey with us</p>
-              <button className="ghost" onClick={() => setRightPanelActive(true)}>
+              <button
+                className={`signup ${isRightPanelActive ? 'active' : ''}`}
+                type="button"
+                onClick={() => {
+                  setIsSignUp(true);
+                  setRightPanelActive(true);
+                }}
+              >
                 Sign Up
               </button>
             </div>
+
+            <form onSubmit={formData.handleSubmit}>
+              <h4 className='text-center'>{isRightPanelActive ? 'Create Account' : 'Sign In'}</h4>
+              <LoginInputField formData={formData} label={"User Name"} type={'text'} id={'userName'} value={loginData} setLoginData={setLoginData}
+              />
+
+              {isRightPanelActive && (
+                <LoginInputField formData={formData} label={"Email"} type={'text'} id={'email'} value={loginData} setLoginData={setLoginData} />
+              )}
+              <LoginInputField formData={formData} label={"Password"} type={'password'} id={'password'} value={loginData} setLoginData={setLoginData} />
+              {!isRightPanelActive && <a href='#' className='d-flex justify-content-center'>Forgot your password?</a>}
+              <button type='submit'>{isRightPanelActive ? 'Sign Up' : 'Sign In'}</button>
+            </form>
           </div>
+
+          {/* Overlay Section */}
+          <LoginButtons setRightPanelActive={setRightPanelActive} />
+
         </div>
       </div>
     </div>

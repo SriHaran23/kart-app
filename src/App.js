@@ -14,6 +14,8 @@ import Account from './pages/account';
 import UserDetails from './components/account/UserDetails';
 import AddressDetails from './components/account/AddressDetails';
 import ItemDetails from './pages/product';
+import CartDetails from './pages/cart';
+import LoginPage from './components/LogIn';
 
 export const LoaderContext = createContext(null);
 export const LoginContext = createContext(null);
@@ -59,6 +61,8 @@ function App() {
                   <Route path="/category/:categoryName/:productId" element={<ItemDetails />} />
                   <Route path="/Mobiles/:brandName" element={<MobileBrands />} />
                   <Route path="/Mobiles/:brand/:modal" element={<ItemDetails />} />
+                  {/* <Route path="/cart" element={<CartDetails />} /> */}
+                  <Route path="/login" element={<LoginPage />} />
                   <Route path="/account" element={<Account />}>
                     <Route index element={<UserDetails />} />
                     <Route path="userDetails" element={<UserDetails />} />

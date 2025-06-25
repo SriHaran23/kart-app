@@ -7,8 +7,8 @@ import { fetchProducts } from '../../functions';
 import { CategoryContext, CompleteContext } from '../../App';
 import { useParams } from 'react-router-dom';
 
-const Groceries = () => {
-  const { categoryName } = useParams();
+const Groceries = ({categoryName}) => {
+  // const { categoryName } = useParams();
   const { completeData, setCompleteData } = useContext(CompleteContext)
 
   const [products, setProducts] = useState([]);
@@ -22,20 +22,22 @@ const Groceries = () => {
     "Home & Furniture": ["furniture", "home-decoration"],
     "Toys & Baby Care": ["beauty", "skin-care", "sports-accessories"],
   };
-  const [selectedCategoryType, setSelectedCategoryType] = useState(categories[categoryName]);
+  const [selectedCategoryType, setSelectedCategoryType] = useState([]);
   const [activeTab, setActiveTab] = useState(0); // Tracks the active tab
-
+  
+  
   useEffect(() => {
     // const categoryData = localStorage.getItem('category');
     // if (categoryData) {
-    //   setCategory(categoryData)
-    // }
-    console.log("products", products);
-    // setSelectedCategoryType(categories[selectedCategory])
+      //   setCategory(categoryData)
+      // }
+      console.log("products", products);
+      // setSelectedCategoryType(categories[selectedCategory])
+      console.log('categoryName',selectedCategoryType,categories[categoryName?.category]);
+setSelectedCategoryType(categories[categoryName?.category])
+    fetchProducts(categories, categoryName?.category, setProducts, setLoading);
 
-    fetchProducts(categories, categoryName, setProducts, setLoading);
-
-  }, []);
+  },[categoryName]);
 
 
   const handleTabClick = (index) => {
@@ -45,27 +47,27 @@ const Groceries = () => {
   return (
     <div className=''>
       {loading ? <CartLoader />
-        : <div className='custom-card p-3 m-4 d-flex justify-content-start '>
-          <div className="card-body p-auto">
+        : <div className='p-3 d-flex justify-content-start '>
+          <div className=" p-auto">
             <div className='d-flex gap-3 align-items-center border-bottom mb-3 pb-1 '>
               {/* <img
                 className='text-center category-img '
                 src={`assets/img/categories/${}`}
                 alt={category?.category}
               /> */}
-              <p className='fs-4 fw-semibold'>{categoryName}</p>
+              <p className='fs-4 fw-semibold'>{categoryName?.category}</p>
             </div>
-            <div className='row row-cols-1 row-cols-lg-5 px-0 row-gap-4'>
-              {products?.map((product, index) => product?.category === categoryName?.toLowerCase() && (
+            <div className='row row-cols-1 row-cols-lg-4 px-0 justify-content-start row-gap-4'>
+              {products?.map((product, index) => product?.category === categoryName?.category?.toLowerCase() && (
                 <div key={index} className="col py-0">
-                  <Grocery product={product} index={index} category={categoryName} />
+                  <Grocery product={product} index={index} category={categoryName?.category} />
                 </div>
               ))}
             </div>
-            {Array.isArray(categories[categoryName]) &&
+            {Array.isArray(categories[categoryName?.category]) &&
               <div className=''>
                 <ul className="nav nav-tabs">
-                  {categories[categoryName].map((item, index) => (
+                  {categories[categoryName?.category].map((item, index) => (
                     <li key={index} className="nav-item">
                       <a className={`nav-link ${activeTab === index ? "active" : ""}`} href="#"
                         onClick={(e) => {
@@ -75,20 +77,19 @@ const Groceries = () => {
                     </li>
                   ))}
                 </ul>
-                {Array.isArray(categories[categoryName]) && (
-                  <div className="tab-pane active row row-cols-4 row-gap-4 p-2 mx-2 mt-1">
+                  <div className="tab-pane active row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-gap-4 p-2 mx-2 mt-1">
+                    {console.log('sdfx',activeTab)}
                     {products?.map((product, productIndex) => selectedCategoryType[activeTab] == product?.category && (
                       <div className="col" key={productIndex}>
                         <Grocery product={product} index={productIndex} category={categoryName} />
-                        {console.log("uuuu", product?.category)}
 
                       </div>
                     ))}
                   </div>
-                )}
               </div>
             }
           </div>
+            {console.log("uuuu", products)}
         </div>
       }
     </div>

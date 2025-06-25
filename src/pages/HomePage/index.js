@@ -8,12 +8,12 @@ import realmePrices from '../../json/realmePrices.json';
 import { encryptObject, generateRandomColor } from '../../functions';
 import { Link, useNavigate } from 'react-router-dom'
 import { CategoryContext, CompleteContext } from '../../App';
+import CategoryPage from '../CategoryPage';
+import MobileCategory from '../mobiles';
+import Groceries from '../grocery';
 
 const HomePage = () => {
-  const [categories, setCategories] = useState(categoriesData?.categories);
-  const [isOpen, setIsOpen] = useState(false);
-  const [mobiles, setMobiles] = useState(realmeModels?.Models);
-  const [prices, setPrices] = useState(realmePrices?.realme_models);
+  const [category, setCategory] = useState(categoriesData?.categories[0]);
   // const { data, setData } = useData() || {};
   const navigate = useNavigate()
   const { selectedCategory, setSelectedCategory } = useContext(CategoryContext)
@@ -33,11 +33,12 @@ const HomePage = () => {
 
   const handleClick = (category, index) => {
 
-    var temp = {...completeData};
+    var temp = { ...completeData };
     temp['category'] = category;
-    console.log("temptemptemp",temp)
-    setCompleteData({...completeData,...temp})
+    console.log("temptemptemp", temp, completeData)
+    setCompleteData({ ...completeData, ...temp })
     setSelectedCategory(category?.category);
+    setCategory(category)
     // localStorage.setItem('mobiles', JSON.stringify(category?.items));
     // localStorage.setItem('category', category?.category);
     console.log('categoryss', category);
@@ -45,17 +46,11 @@ const HomePage = () => {
   };
 
   useEffect(() => {
-    // Fetch the JSON file
-    // fetch(categoriesData) // Ensure the correct path
-    //   .then((response) => response.json())
-    //   .then((data) => setCategories(data.categories))
-    //   .catch((error) => console.error("Error loading categories:", error));
-    // console.log("categoriesData", categories);
-  }, []);
+    console.log(";;;;;;;;", category);
 
-
+  }, [category])
   return (
-    <div className='mt-4'>
+    <div className=''>
       <div className='d-flex d-md-none justify-content-center '>
         <form className='d-flex search-input-container mx-3 my-1'>
           <input type="text" name="search" placeholder="Search..." className="search-input rounded-pill flex-fill" />
@@ -66,22 +61,24 @@ const HomePage = () => {
           </span>
         </form>
       </div>
-      <div className="custom-card mx-3">
-        <div className="card-body">
-          <h4 className='m-2 p-2 border-bottom'>Category</h4>
-          <ul className='d-flex justify-content-around category py-2'>
-            {categories.map((category, index) => (
-              <Link key={index} to={`/category/${category?.category}`} style={{ textDecoration: 'none', color: '#000' }}>
-                <li /* className='dropdown' */ className={`${index < categories?.length - 1 ? "me-5" : "me-4"} category-item item-size`} onClick={() => handleClick(category, index)}>
+      <div className='d-flex flex-column flex-column flex-lg-row'>
+        <div className="custom-card category mx-3 p-2">
+          <div className="card-body h-100">
+            {/* <h4 className='m-2 p-2 border-bottom'>Category</h4> */}
+            <ul className='d-flex flex-lg-column  justify-content-between h-100 ps-0 py-2 mb-0'>
+              {categoriesData?.categories.map((category, index) => (
+                // <Link key={index} to={`/category/${category?.category}`} className='d-flex justify-content-center' style={{ textDecoration: 'none', color: '#000' }}>
+                <li key={index} /* className='dropdown' */ className={` categories-item item-size`} onClick={() => handleClick(category, index)}>
                   <span className=''>
-                    <div className='d-flex justify-content-center'>
+                    <div className=''>
                       <img
                         className='text-center category-img'
                         src={`assets/img/categories/${category.image_name}`}
+                        title={category?.category}
                         alt={category?.category}
                       />
                     </div>
-                    <p className='mb-0 text-end'>{category?.category}</p>
+                    <p className='mb-0 text-end d-lg-none'>{category?.category}</p>
                   </span>
                   {/* <div className="dropdownContent">
                   {category.brands.map((brands, index) => (
@@ -89,12 +86,24 @@ const HomePage = () => {
                   ))}
                 </div> */}
                 </li>
-              </Link>
-            ))}
-          </ul>
+                // </Link>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div className='custom-card content-main'>
+          <div className='content-div'>
+            {console.log("fgh", category)}
+            {
+              category?.category === 'Mobiles'
+                ? <MobileCategory categoryName={category} />
+                : <Groceries categoryName={category} />
+            }
+            {/* <CategoryPage categoryName={category}/> */}
+          </div>
         </div>
       </div>
-      <section>
+      {/* <section>
         {categories.map((category, index) => (
           <div key={index} className="custom-card position-relative mx-3 my-4 pb-3">
             <b className='category-name px-1 text-light' style={{ backgroundColor: generateRandomColor(), }}>{category?.category}</b>
@@ -103,7 +112,7 @@ const HomePage = () => {
             </div>
           </div>
         ))}
-      </section>
+      </section> */}
     </div>
   )
 }

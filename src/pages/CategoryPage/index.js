@@ -3,9 +3,9 @@ import { useParams } from 'react-router-dom';
 import MobileCategory from '../mobiles';
 import Groceries from '../grocery';
 
-const CategoryPage = () => {
-    const { categoryName } = useParams();
-
+const CategoryPage = ({categoryName}) => {
+    console.log("categoryName",categoryName);
+    
     return (
         <div>
             {

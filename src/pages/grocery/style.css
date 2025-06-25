@@ -12,7 +12,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.308);
   border-radius: 8px;
   display: block;
-  align-self: stretch;
+  /* align-self: stretch; */
 }
 
 /* .custom-card:first-child {
@@ -97,4 +97,10 @@
   color: #fff;
   font-weight: 600;
   height: 60px;
+}
+
+@media (max-width:991px) {
+  .custom-card1{
+    width: 70vw;
+  }
 }

@@ -24,8 +24,8 @@ const Images = ({categoryName,product,images,imageIndex,setImagesIndex}) => {
   return (
     <div>
          <div className='d-flex justify-content-center product-img'>
-            {/* <img className={`${/* categoryName !== 'Mobiles' &&  'product-items'}`} src={images[imageIndex]} alt={categoryName} /> */}
-            <ProductImageZoom src={images[imageIndex]} alt={categoryName}/>
+            <img className={` categoryName !== 'Mobiles' &&  'product-items'}`} src={images[imageIndex]} alt={categoryName} />
+            {/* <ProductImageZoom src={images[imageIndex]} alt={categoryName}/> */}
         </div>
         {currentRecords?.length > 1 &&
             <div className="d-flex justify-content-between gap-2">

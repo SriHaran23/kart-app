@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import ShowOrHideEye from '../../svg/ShowOrHideEye';
+import ShowOrHideEye from '../../../svg/ShowOrHideEye';
 
-const LoginInputField = ({ label, type, id, value, setLoginData }) => {
+const LoginInputField = ({ label, type, id, value, setLoginData,formData }) => {
   const [isShow, setIsShow] = useState(false)
   const [isFocused, setIsFocused] = useState(false);
   const handleFocus = () => setIsFocused(true);
@@ -18,31 +18,37 @@ const LoginInputField = ({ label, type, id, value, setLoginData }) => {
         {label}
       </label>
       {type != "password"
-        ? <input
+        ?
+           <input
           className='inputField'
           type={type}
           id={id}
-          value={value[id]}
-          onChange={handleChange}
-          onFocus={handleFocus}
-          onBlur={handleBlur}
+          // value={value[id]}
+          onChange={formData.handleChange}
+          // onFocus={handleFocus}
+          onBlur={formData.handleBlur}
           placeholder={`Enter Your ${id}`}
         />
-        : <div className='input-group mb-3'>
+        :
+          <div className='input-group mb-3'>
           <input
             className='form-control my-0'
             type={isShow ? 'text' : 'password'}
-            value={value[id]}
-            onChange={handleChange}
-            onFocus={handleFocus}
-            onBlur={handleBlur}
+            // value={value[id]}
+            id={id}
+            onChange={formData.handleChange}
+            // onFocus={handleFocus}
+            onBlur={formData.handleBlur}
             placeholder={`Enter Your ${id}`}
           />
           <span className='input-group-text' id='basic-addon2'>
             <ShowOrHideEye isShow={isShow} setIsShow={setIsShow} />
           </span>
         </div>
-      }
+        }
+        {formData.touched[id] && formData.errors[id] && (
+          <div className='text-danger fw-semibold fs-6'>* {formData.errors[id]}</div>
+        )}
     </div>
   );
 };

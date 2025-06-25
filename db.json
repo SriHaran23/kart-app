@@ -1,0 +1,206 @@
+{
+  "cart": [
+    {
+      "Model": "Realme 1",
+      "Description": "The debut smartphone from Realme, offering a stylish diamond-cut design and powerful performance at an affordable price.",
+      "Highlights": [
+        "Helio P60 processor for smooth multitasking",
+        "Diamond-cut design for a premium look",
+        "AI-powered 13MP rear camera for stunning photos"
+      ],
+      "Specifications": {
+        "General": {
+          "Release Date": "May 2018",
+          "Form Factor": "Touchscreen",
+          "Dimensions": "156.5 x 75.2 x 7.8 mm",
+          "Weight": "155 grams",
+          "Colours": "Diamond Black, Solar Red, Moonlight Silver"
+        },
+        "Display": {
+          "Type": "IPS LCD",
+          "Size": "6.0 inches",
+          "Resolution": "1080 x 2160 pixels",
+          "Aspect Ratio": "18:9"
+        },
+        "Performance": {
+          "Processor": "MediaTek Helio P60",
+          "CPU": "Octa-core (4x2.0 GHz Cortex-A73 & 4x2.0 GHz Cortex-A53)",
+          "GPU": "Mali-G72 MP3",
+          "RAM": "3GB, 4GB, 6GB",
+          "Internal Storage": "32GB, 64GB, 128GB"
+        },
+        "Camera": {
+          "RearCamera": "13MP",
+          "RearCameraFeatures": "LED Flash, HDR, Panorama",
+          "FrontCamera": "8MP",
+          "FrontCameraFeatures": "AI Beauty Mode"
+        },
+        "Battery": {
+          "Capacity": "3410mAh",
+          "Fast Charging": "No"
+        },
+        "Connectivity": {
+          "Wi-Fi": "Yes, Wi-Fi 802.11, ac/b/g/n",
+          "Bluetooth": "Yes, v4.2",
+          "USB": "Yes, microUSB 2.0",
+          "Headphone Jack": "Yes"
+        },
+        "Sensors": {
+          "Face Unlock": "Yes",
+          "Accelerometer": "Yes",
+          "Proximity Sensor": "Yes",
+          "Compass": "Yes"
+        },
+        "Software": {
+          "Operating System": "Android 8.1 (Oreo)",
+          "Skin": "ColorOS 5.2"
+        }
+      },
+      "id": 1
+    },
+    {
+      "Model": "Realme 2",
+      "Description": "An upgraded budget smartphone with a large display, a dual-camera setup, and long-lasting battery life.",
+      "Highlights": [
+        "Dual-camera system for versatile photography",
+        "4230mAh battery for all-day usage",
+        "Diamond-cut design for a stylish finish"
+      ],
+      "Specifications": {
+        "General": {
+          "Release Date": "September 2018",
+          "Form Factor": "Touchscreen",
+          "Dimensions": "156.2 x 75.6 x 8.2 mm",
+          "Weight": "168 grams",
+          "Colours": "Diamond Black, Diamond Red, Diamond Blue"
+        },
+        "Display": {
+          "Type": "IPS LCD",
+          "Size": "6.2 inches",
+          "Resolution": "720 x 1520 pixels",
+          "Aspect Ratio": "19:9"
+        },
+        "Performance": {
+          "Processor": "Qualcomm Snapdragon 450",
+          "CPU": "Octa-core 1.8 GHz Cortex-A53",
+          "GPU": "Adreno 506",
+          "RAM": "3GB, 4GB",
+          "Internal Storage": "32GB, 64GB"
+        },
+        "Camera": {
+          "RearCamera": "13MP + 2MP",
+          "RearCameraFeatures": "LED Flash, HDR, Panorama",
+          "FrontCamera": "8MP",
+          "FrontCameraFeatures": "AI Beauty Mode"
+        },
+        "Battery": {
+          "Capacity": "4230mAh",
+          "Fast Charging": "No"
+        },
+        "Connectivity": {
+          "Wi-Fi": "Yes, Wi-Fi 802.11, ac/b/g/n",
+          "Bluetooth": "Yes, v4.2",
+          "USB": "Yes, microUSB 2.0",
+          "Headphone Jack": "Yes"
+        },
+        "Sensors": {
+          "Fingerprint Sensor": "Yes, Rear-mounted",
+          "Face Unlock": "Yes",
+          "Accelerometer": "Yes",
+          "Proximity Sensor": "Yes",
+          "Compass": "Yes"
+        },
+        "Software": {
+          "Operating System": "Android 8.1 (Oreo)",
+          "Skin": "ColorOS 5.2"
+        }
+      },
+      "id": 2
+    },
+    {
+      "id": 16,
+      "title": "Apple",
+      "description": "Fresh and crisp apples, perfect for snacking or incorporating into various recipes.",
+      "category": "groceries",
+      "price": 1.99,
+      "discountPercentage": 12.62,
+      "rating": 4.19,
+      "stock": 8,
+      "tags": [
+        "fruits"
+      ],
+      "sku": "GRO-BRD-APP-016",
+      "weight": 9,
+      "dimensions": {
+        "width": 13.66,
+        "height": 11.01,
+        "depth": 9.73
+      },
+      "warrantyInformation": "3 year warranty",
+      "shippingInformation": "Ships in 2 weeks",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Very satisfied!",
+          "date": "2025-04-30T09:41:02.053Z",
+          "reviewerName": "Sophia Brown",
+          "reviewerEmail": "sophia.brown@x.dummyjson.com"
+        },
+        {
+          "rating": 1,
+          "comment": "Very dissatisfied!",
+          "date": "2025-04-30T09:41:02.053Z",
+          "reviewerName": "Scarlett Bowman",
+          "reviewerEmail": "scarlett.bowman@x.dummyjson.com"
+        },
+        {
+          "rating": 3,
+          "comment": "Very unhappy with my purchase!",
+          "date": "2025-04-30T09:41:02.053Z",
+          "reviewerName": "William Gonzalez",
+          "reviewerEmail": "william.gonzalez@x.dummyjson.com"
+        }
+      ],
+      "returnPolicy": "90 days return policy",
+      "minimumOrderQuantity": 7,
+      "meta": {
+        "createdAt": "2025-04-30T09:41:02.053Z",
+        "updatedAt": "2025-04-30T09:41:02.053Z",
+        "barcode": "7962803553314",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+      },
+      "images": [
+        "https://cdn.dummyjson.com/product-images/groceries/apple/1.webp"
+      ],
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/apple/thumbnail.webp"
+    }
+  ],
+  "users": [
+    {
+      "userName": "sriharan",
+      "password": "Haran@23",
+      "email": "sriharankandepalli@gmail.com",
+      "id": 1
+    },
+    {
+      "userName": "haran",
+      "password": "Sri@123#",
+      "email": "sriharankandepalli@gmail.com",
+      "id": 2
+    },
+    {
+      "userName": "venkat",
+      "password": "Venkat@123",
+      "email": "venkat@gmail.com",
+      "isSignUp": false,
+      "id": 3
+    }
+  ],
+  "login": {
+    "userName": "haran",
+    "password": "Sri@123#",
+    "email": "sriharankandepalli@gmail.com",
+    "id": 2
+  }
+}
