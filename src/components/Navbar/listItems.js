@@ -3,10 +3,11 @@ import LoginPage from '../LogIn'
 import ArrowUp from '../../svg/ArrowUp'
 import ArrowDown from '../../svg/ArrowDown'
 import { toast } from 'react-toastify'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const ListItems = ({ login, isOpen1, setIsOpen1, setLogin }) => {
     const [isRightPanelActive, setRightPanelActive] = useState(false);
+  const location = useLocation();
 
     const handleLogout = (e) => {
         localStorage.removeItem("login")
@@ -38,7 +39,7 @@ const ListItems = ({ login, isOpen1, setIsOpen1, setLogin }) => {
                 </Link>
                 <li className='d-inline-flex'>
                     {!login?.username ? (
-                        <Link to={'/login'} style={{ textDecoration: 'none', color: '#000' }}>
+                        <Link to={'/login'} state={{ from: location?.pathname }} style={{ textDecoration: 'none', color: '#000' }}>
                             <span className="dropdownText d-flex align-items-center gap-2 gap-md-1 fs-5">
                                 <span className=''><i className="bi bi-person-circle"></i></span>
                                 <span className="">Login</span>

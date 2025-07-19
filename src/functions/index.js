@@ -1,4 +1,5 @@
 import axios from "axios";
+import { useLocation } from "react-router-dom";
 import { toast } from "react-toastify";
 import * as Yup from "yup";
 
@@ -46,7 +47,9 @@ export const getMobile = async (brand, model, setMobiles) => {
 };
 
 
-export const logIn = async (initialData, setLogin) => {
+export const logIn = async (initialData,location) => {
+    console.log("/.;'/;'/",initialData,location);
+    
     try {
         const response = await axios.post("https://dummyjson.com/user/login", {
             username: initialData?.userName,
@@ -57,10 +60,11 @@ export const logIn = async (initialData, setLogin) => {
         });
 
         // localStorage.setItem('login', JSON.stringify(response?.data));
-        setLogin(response?.data)
+        // setLogin(response?.data)
         toast.success("Loggedin Successfully")
+        return true
     } catch (error) {
-        toast.error("Loggedin Successfully")
+        toast.error("Login Failed")
     }
 };
 
@@ -192,12 +196,12 @@ export const getValidationSchema = (isSignUp) =>
           )
       : Yup.string().notRequired(),
 
-    password: Yup.string()
-      .required("Password is mandatory")
-      .matches(
-        /^(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}$/,
-        "Password should contain minimum 8 characters, 1 uppercase, 1 number, 1 special character"
-      ),
+    // password: Yup.string()
+    //   .required("Password is mandatory")
+    //   .matches(
+    //     /^(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}$/,
+    //     "Password should contain minimum 8 characters, 1 uppercase, 1 number, 1 special character"
+    //   ),
   });
 
 

@@ -55,7 +55,7 @@ const MobileCategory = ({categoryName}) => {
                         </div>
                     </div> */}
                 <div className='row justify-content-start row-cols-2 row-cols-md-3 row-cols-lg-4 row-gap-4 m-4'>
-                    {completeData?.category?.items?.map((mobile, index) => (
+                    {categoryName?.items?.map((mobile, index) => (
                         <div key={index} className="col">
                             <div className="custom-card w-100" onClick={() => handleClick(mobile, index)} >
                                 <Link className='' to={`/Mobiles/${mobile?.brand}`} style={{ textDecoration: 'none', color: '#000' }}>

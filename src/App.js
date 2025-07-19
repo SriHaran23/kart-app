@@ -16,6 +16,7 @@ import AddressDetails from './components/account/AddressDetails';
 import ItemDetails from './pages/product';
 import CartDetails from './pages/cart';
 import LoginPage from './components/LogIn';
+import ResponsiveContainer from './components/resize';
 
 export const LoaderContext = createContext(null);
 export const LoginContext = createContext(null);
@@ -31,6 +32,7 @@ function App() {
   }
   const [completeData, setCompleteData] = useState(completeInitialData);
   const [selectedCategory, setSelectedCategory] = useState();
+  const [windowSize, setWindowSize] = useState();
  
   useEffect(() => {
     setTimeout(() => {
@@ -46,6 +48,10 @@ function App() {
     encryptObject(login)
   }, [login])
 
+  useEffect(()=>{
+    setWindowSize(window.innerHeight - 54)
+  })
+
   return (
     <CompleteContext.Provider value={{ completeData, setCompleteData }}>
       <LoaderContext.Provider value={{ loader, setLoader }}>
@@ -54,28 +60,23 @@ function App() {
             <Navbar />
             {loader
               ? <CartLoader />
-              : <div className="mt-2">
+              : <div className="" >
+        <ResponsiveContainer>
                 <Routes>
                   <Route path='/' element={<HomePage />} />
-                  <Route path="/category/:categoryName" element={<CategoryPage />} />
-                  <Route path="/category/:categoryName/:productId" element={<ItemDetails />} />
+                  <Route path="/Category/:categoryName" element={<CategoryPage />} />
+                  <Route path="/Category/:categoryName/:productId" element={<ItemDetails />} />
                   <Route path="/Mobiles/:brandName" element={<MobileBrands />} />
                   <Route path="/Mobiles/:brand/:modal" element={<ItemDetails />} />
-                  {/* <Route path="/cart" element={<CartDetails />} /> */}
+                  <Route path="/cart" element={<CartDetails />} />
                   <Route path="/login" element={<LoginPage />} />
                   <Route path="/account" element={<Account />}>
                     <Route index element={<UserDetails />} />
                     <Route path="userDetails" element={<UserDetails />} />
                     <Route path="addressDetails" element={<AddressDetails />} />
                   </Route>
-                  {/* <Route path='/mobiles-category' element={<MobileCategory />} />
-                  <Route path='/grocery-category' element={<Groceries />} />
-                  <Route path='/electronics-category' element={<Groceries />} />
-                  <Route path='/fashion-category' element={<Groceries />} />
-                  <Route path='/appliances-category' element={<Groceries />} />
-                  <Route path='/furniture-category' element={<Groceries />} />
-                  <Route path='/babyCare-category' element={<Groceries />} /> */}
                 </Routes>
+        </ResponsiveContainer>
               </div>
             }
             <ToastContainer position="top-right" autoClose={1500} />

@@ -13,16 +13,15 @@ import LoginButtons from './button';
 
 const LoginPage = ({ }) => {
   const location = useLocation();
+    const navigate = useNavigate();
   const [isRightPanelActive, setRightPanelActive] = useState(false);
   const [isRightMobilePanelActive, setRightMobilePanelActive] = useState(false);
-  const from = location.state?.from?.pathname || "/";
   const [initialData, setInitialData] = useState({
     userName: "",
     password: "",
     email: ""
   })
   const [loginData, setLoginData] = useState(initialData);
-  const { login, setLogin } = useContext(LoginContext);
   const [isSignUp, setIsSignUp] = useState(false);
   const formData = useFormik({
     initialValues: {
@@ -32,12 +31,17 @@ const LoginPage = ({ }) => {
       isSignUp: isRightPanelActive
     },
     validationSchema: getValidationSchema(isRightPanelActive),
-    onSubmit: isRightPanelActive ? "/* addUsers */" : login
+    onSubmit: (values) => {if(!isRightPanelActive) {logIn(values,location) && navigate(location.state?.from || '/')}}
   })
 
   const handleSubmit = (e) => {
 
   };
+
+  useEffect(()=>{
+    console.log("loca",location);
+    
+  },[location])
 
   const handleFormChange = () => {
     setRightPanelActive(!isRightPanelActive)

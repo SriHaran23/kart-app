@@ -27,16 +27,18 @@ useEffect(()=>{
     
 },[cart])
     return (
-        <div className='container mt-4'>
-        <div className='row justify-content-around'>
-            <div className='col-7 custom-card'>
+        <div className='container h-100 py-3'>
+        <div className='row justify-content-around h-100'>
+            <div className='col-7 custom-card h-100'>
                 {cart?.map((el,i)=>{
                     return <div key={i} className=''>
                         <h5>{el?.Model}</h5>
                     </div>
                 })}
             </div>
-            <div className='col-4 custom-card'></div>
+            <div className='col-4  h-100'>
+            <div className='custom-card h-75'></div>
+            </div>
         </div>
         </div>
     )

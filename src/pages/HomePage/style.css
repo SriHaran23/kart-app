@@ -1,7 +1,3 @@
-.home-div{
-  height: 100vh;
-}
-
 .custom-card {
   /* width: 96vw; */
   /* margin-top: 10%; */
@@ -11,15 +7,15 @@
   /* Optional: for rounded corners */
 }
 .content-main{
-  width: calc(100vw - 100px);
+  width: 100%;
 }
 .content-div{
-  height: 85vh;
+  height: 100%;
   overflow-y: auto;
 }
 .category{
-  width: 70px;
-  height: 88vh;
+  width: 76px;
+  height: 100%;
 }
 
 .custom-card .item-size {
@@ -30,8 +26,12 @@
 
 .categories-item {
   width: max-content;
+    transition: transform .3s;
 }
 
+.categories-item:hover {
+  transform: scale(1.2);
+}
 .category-img {
   width: 60px;
   height: 60px;
@@ -43,6 +43,30 @@
   left: 10px;
 }
 
+.categories-wrapper {
+  position: relative;
+}
+
+.categories-item {
+  position: relative;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.categories-item.selected {
+  transform: scale(1.2);
+}
+
+.selection-indicator {
+  position: absolute;
+  left: 0;
+  margin-top: 6px;
+  width: 4px;
+  background-color: #007BFF;
+  transition: top 0.3s ease, height 0.3s ease;
+  border-radius: 2px;
+}
+
 @media (max-width:991px) {
   .category{
     width: 92vw;
@@ -51,7 +75,6 @@
   }
   .content-main{
     width: 92vw;
-    margin: 17px;
   }
   .content-div{
     height: 100%;
